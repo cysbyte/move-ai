@@ -142,49 +142,49 @@ const ContentBox = styled.div`
 
 const Customerize = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'DeFi Use Cases',
-            desc: 'Launch staking pools, liquidity mining, and more',
-            icon: icon1,
-        },
-        {
-            id: 2,
-            title: 'NFT Minting Made Easy',
-            desc: 'Create, distribute, and manage NFT collections',
-            icon: icon2,
-        },
-        {
-            id: 3,
-            title: 'DAO Governance',
-            desc: 'Build secure voting and decision-making systems',
-            icon: icon3,
-        },
-    ]
-    return (
-        <Wrapper>
-            <ContentBox>
-                <div className='top-box'>
-                    <h1>Customize contracts to match your vision</h1>
-                    <p>With MoveFlow, you can tailor smart contracts to fit your specific needs. From DeFi protocols to NFT marketplaces, empower your vision with flexibility and simplicity. Customize, preview, and deploy—all in one platform</p>
+  const data = [
+    {
+      id: 1,
+      title: 'DeFi Use Cases',
+      desc: 'Launch staking pools, liquidity mining, and more',
+      icon: icon1,
+    },
+    {
+      id: 2,
+      title: 'NFT Minting Made Easy',
+      desc: 'Create, distribute, and manage NFT collections',
+      icon: icon2,
+    },
+    {
+      id: 3,
+      title: 'DAO Governance',
+      desc: 'Build secure voting and decision-making systems',
+      icon: icon3,
+    },
+  ]
+  return (
+    <Wrapper>
+      <ContentBox>
+        <div className='top-box'>
+          <h1>Customize contracts to match your vision</h1>
+          <p>With MoveFlow, you can tailor smart contracts to fit your specific needs. From DeFi protocols to NFT marketplaces, empower your vision with flexibility and simplicity. Customize, preview, and deploy—all in one platform</p>
+        </div>
+        <div className='bottom-box'>
+          <img className='bg-img' src={bg} alt="" />
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <div className='item-card-right'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='bottom-box'>
-                    <img className='bg-img' src={bg} alt="" />
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <div className='item-card-right'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>))
-                    }
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+              </div>))
+          }
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Customerize)

@@ -113,21 +113,21 @@ const ContentBox = styled.div`
     }
 `
 const Hero = () => {
-    const { setShowSubMenu } = useDialogContext()
-    return (
-        <Wrapper onClick={() => setShowSubMenu(false)}>
-            <img className='bg-hero' src={bgHero} alt="" />
-            <ContentBox>
-                <img src={logo} alt="" />
-                <h3>Bringing AI to the &nbsp;<span><img src={movement} alt="" /></span>&nbsp; ecosystem</h3>
-                <p>MoveAi as a first-mover on movement lets you easily create, deploy, and scale AI agents with our robust engine layer, fueling the next wave of decentralized intelligence innovation.
-                </p>
-                <div className='bottom-box'>
-                    <img className='table-img' src={tableImg} alt="" />
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  const { setShowSubMenu } = useDialogContext()
+  return (
+    <Wrapper onClick={() => setShowSubMenu(false)}>
+      <img className='bg-hero' src={bgHero} alt="" />
+      <ContentBox>
+        <img src={logo} alt="" />
+        <h3>Bringing AI to the &nbsp;<span><img src={movement} alt="" /></span>&nbsp; ecosystem</h3>
+        <p>MoveAi as a first-mover on movement lets you easily create, deploy, and scale AI agents with our robust engine layer, fueling the next wave of decentralized intelligence innovation.
+        </p>
+        <div className='bottom-box'>
+          <img className='table-img' src={tableImg} alt="" />
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Hero)

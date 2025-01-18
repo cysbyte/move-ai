@@ -54,7 +54,7 @@ const Wrapper = styled.article`
 `
 
 const MoblieMenu = () => {
-  const { showMobileMenu, setShowMobileMenu, showSubMenu, setShowSubMenu } = useDialogContext()
+  const { setShowMobileMenu, showSubMenu, setShowSubMenu } = useDialogContext()
 
   const navigate = useNavigate()
   const handleMenuItemClick = (name: string, link: string) => {
@@ -102,4 +102,4 @@ const MoblieMenu = () => {
   )
 }
 
-export default MoblieMenu
+export default React.memo(MoblieMenu)

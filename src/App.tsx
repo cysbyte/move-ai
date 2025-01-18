@@ -40,7 +40,7 @@ function App() {
             </Routes>
           </Suspense>
         </Router>
-        </ToastProvider>
+      </ToastProvider>
     </DialogProvider>
   )
 }

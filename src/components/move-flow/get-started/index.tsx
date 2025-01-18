@@ -66,13 +66,13 @@ const ContentBox = styled.div`
 const GetStarted = () => {
   return (
     <Wrapper>
-        <ContentBox>
-            <img className='bg-img' src={bg} alt="" />
-            <div className='left-box'>
-                <h1>Get Started with MoveFlow Today</h1>
-                <p>Let your ideas drive the future. MoveFlow is your no-code solution to building, customizing, and deploying smart contracts</p>
-            </div>
-        </ContentBox>
+      <ContentBox>
+        <img className='bg-img' src={bg} alt="" />
+        <div className='left-box'>
+          <h1>Get Started with MoveFlow Today</h1>
+          <p>Let your ideas drive the future. MoveFlow is your no-code solution to building, customizing, and deploying smart contracts</p>
+        </div>
+      </ContentBox>
     </Wrapper>
   )
 }

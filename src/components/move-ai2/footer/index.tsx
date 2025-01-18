@@ -37,10 +37,10 @@ const ContentBox = styled.div`
 const Footer = () => {
   return (
     <Wrapper>
-        <ContentBox>
-            <p>Reach out to form alliances, share insights, and co-create the future of on-chain AI</p>
-            <a target='_blank' href="https://t.me/moveaiofficial">Contact us</a>
-        </ContentBox>
+      <ContentBox>
+        <p>Reach out to form alliances, share insights, and co-create the future of on-chain AI</p>
+        <a target='_blank' href="https://t.me/moveaiofficial">Contact us</a>
+      </ContentBox>
     </Wrapper>
   )
 }

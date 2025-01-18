@@ -3,49 +3,49 @@ import Card from './Card'
 import separator from '@/assets/home/separator.svg'
 
 const Ecosystem = () => {
-    const data = [
-        {
-            id: 1,
-            title: 'Developers',
-            desc: 'Build and optimize AI applications, agents, and integrations.'
-        },
-        {
-            id: 2,
-            title: 'Data Consumers',
-            desc: 'Access real-time insights and scalable AI solutions.'
-        },
-        {
-            id: 3,
-            title: 'Data Providers',
-            desc: 'Contribute datasets for model training and earn rewards.'
-        },
-        {
-            id: 4,
-            title: 'AI Trainers',
-            desc: 'Refine models through collaborative training and validation.'
-        },
-        {
-            id: 5,
-            title: 'Node Operators',
-            desc: 'Support network security and scalability by running nodes.'
-        },
-        {
-            id: 6,
-            title: 'Governance Members',
-            desc: 'Shape project direction through decentralized voting.'
-        },
-        {
-            id: 7,
-            title: 'Community Advocates',
-            desc: 'Educate, promote, and grow the Neural Network community.'
-        },
-        {
-            id: 8,
-            title: 'Security Contributors',
-            desc: 'Enhance ecosystem security and uphold decentralized standards.'
-        },
-    ]
-    const Wrapper = styled.section`
+  const data = [
+    {
+      id: 1,
+      title: 'Developers',
+      desc: 'Build and optimize AI applications, agents, and integrations.'
+    },
+    {
+      id: 2,
+      title: 'Data Consumers',
+      desc: 'Access real-time insights and scalable AI solutions.'
+    },
+    {
+      id: 3,
+      title: 'Data Providers',
+      desc: 'Contribute datasets for model training and earn rewards.'
+    },
+    {
+      id: 4,
+      title: 'AI Trainers',
+      desc: 'Refine models through collaborative training and validation.'
+    },
+    {
+      id: 5,
+      title: 'Node Operators',
+      desc: 'Support network security and scalability by running nodes.'
+    },
+    {
+      id: 6,
+      title: 'Governance Members',
+      desc: 'Shape project direction through decentralized voting.'
+    },
+    {
+      id: 7,
+      title: 'Community Advocates',
+      desc: 'Educate, promote, and grow the Neural Network community.'
+    },
+    {
+      id: 8,
+      title: 'Security Contributors',
+      desc: 'Enhance ecosystem security and uphold decentralized standards.'
+    },
+  ]
+  const Wrapper = styled.section`
         width: 100%;
         margin-top: 12rem;
         position: relative;
@@ -167,31 +167,31 @@ const Ecosystem = () => {
             }
         }
     `
-    return (
-        <Wrapper>
-            <img className='separator' src={separator} alt="" />
-            <h2>The Neural Network Ecosystem <br />Decentralized AI, Globally Connected
-            </h2>
-            <p>A scalable, distributed infrastructure for autonomous AI applications and collaborative intelligence.</p>
-            <div className='middle-box'>
-                <h3>Join the Neural Network: Build Decentralized AI from Anywhere</h3>
-                <p>Be part of a globally distributed effort to advance decentralized AI.</p>
-                <div className='grid-container'>
-                    {
-                        data.map((item) => (
-                            <Card id={item.id} title={item.title} desc={item.desc} />
-                        ))
-                    }
-                </div>
-                <div className='bottom-box'>
-                    <p>CTA: Learn More</p>
-                    <p>Ways to Participate in the Ecosystem</p>
-                </div>
-            </div>
+  return (
+    <Wrapper>
+      <img className='separator' src={separator} alt="" />
+      <h2>The Neural Network Ecosystem <br />Decentralized AI, Globally Connected
+      </h2>
+      <p>A scalable, distributed infrastructure for autonomous AI applications and collaborative intelligence.</p>
+      <div className='middle-box'>
+        <h3>Join the Neural Network: Build Decentralized AI from Anywhere</h3>
+        <p>Be part of a globally distributed effort to advance decentralized AI.</p>
+        <div className='grid-container'>
+          {
+            data.map((item) => (
+              <Card id={item.id} title={item.title} desc={item.desc} />
+            ))
+          }
+        </div>
+        <div className='bottom-box'>
+          <p>CTA: Learn More</p>
+          <p>Ways to Participate in the Ecosystem</p>
+        </div>
+      </div>
 
 
-        </Wrapper>
-    )
+    </Wrapper>
+  )
 }
 
 export default Ecosystem

@@ -2,25 +2,25 @@ import styled from 'styled-components'
 import bgCard from '@/assets/home/bg-technology-card.svg'
 
 const data = [
-    {
-        id: 1,
-        title: "AI-Powered Execution Layer",
-        desc: "Purpose-built for running AI models, our execution layer leverages Ethereum’s VM to handle training, validation, and inference, delivering seamless AI task management.",
-    },
-    {
-        id: 2,
-        title: "Transparent Data Availability Layer",
-        desc: "Accessible, verifiable data builds a trust-driven network environment, allowing all participants to confidently access essential AI data.",
-    },
-    {
-        id: 3,
-        title: "Consensus Layer: Performance-Driven",
-        desc: "Verifies and ranks AI contributions, rewarding high-quality model performance and ensuring optimal collaboration across the network.",
-    },
+  {
+    id: 1,
+    title: "AI-Powered Execution Layer",
+    desc: "Purpose-built for running AI models, our execution layer leverages Ethereum’s VM to handle training, validation, and inference, delivering seamless AI task management.",
+  },
+  {
+    id: 2,
+    title: "Transparent Data Availability Layer",
+    desc: "Accessible, verifiable data builds a trust-driven network environment, allowing all participants to confidently access essential AI data.",
+  },
+  {
+    id: 3,
+    title: "Consensus Layer: Performance-Driven",
+    desc: "Verifies and ranks AI contributions, rewarding high-quality model performance and ensuring optimal collaboration across the network.",
+  },
 ]
 
 const Technology = () => {
-    const Wrapper = styled.section`
+  const Wrapper = styled.section`
         width: 100%;
         margin-top: 9.5rem;
         position: relative;
@@ -170,34 +170,34 @@ const Technology = () => {
         }
 
     `
-    return (
-        <Wrapper>
-            <div className='container'>
-                <h2>Technology</h2>
-                <p>Neural Network is a Purpose-Built Modular Design for Decentralized AI Applications and Agents.</p>
-                <div className='middle-box'>
-                    <h3>Powerful Modular Framework on optimistic rollup technology.</h3>
-                    <div className='technology-box'>
-                        {
-                            data.map((item) => (
-                                <div key={item.id} 
-                                className={`technology-card ${item.id===1?'bg-card-gradient': ''}`}
-                                >
-                                    {item.id===1 && <img src={bgCard} alt="" />}
-                                    <h6>{item.title}</h6>
-                                    <p>{item.desc}</p>
-                                </div>
-                            ))
-                        }
-                    </div>
+  return (
+    <Wrapper>
+      <div className='container'>
+        <h2>Technology</h2>
+        <p>Neural Network is a Purpose-Built Modular Design for Decentralized AI Applications and Agents.</p>
+        <div className='middle-box'>
+          <h3>Powerful Modular Framework on optimistic rollup technology.</h3>
+          <div className='technology-box'>
+            {
+              data.map((item) => (
+                <div key={item.id} 
+                  className={`technology-card ${item.id===1?'bg-card-gradient': ''}`}
+                >
+                  {item.id===1 && <img src={bgCard} alt="" />}
+                  <h6>{item.title}</h6>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='bottom-box'>
-                    <p>CTA: Learn about Neural Network technologies [Doc link]</p>
-                    <p>[Graphic presentation on Neural Network Architecture ]</p>
-                </div>
-            </div>
-        </Wrapper>
-    )
+              ))
+            }
+          </div>
+        </div>
+        <div className='bottom-box'>
+          <p>CTA: Learn about Neural Network technologies [Doc link]</p>
+          <p>[Graphic presentation on Neural Network Architecture ]</p>
+        </div>
+      </div>
+    </Wrapper>
+  )
 }
 
 export default Technology

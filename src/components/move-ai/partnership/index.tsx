@@ -130,25 +130,25 @@ const ContentBox = styled.div`
 `
 
 const Partenership = () => {
-    return (
-        <Wrapper>
-            <ContentBox>
-                <img className='plus' src={plus} alt="" />
-                <h2>Partnership</h2>
-                <div className='middle-box'>
-                    <div className='square'>
-                    </div>
-                    <h4>Collaboration</h4>
-                </div>
-                <div className='button-box'>
-                    <Link to={''} className='start-button'>Partnership Requests</Link>
-                </div>
-                <div className='bottom-box'>
-                    <p className='desc'>Reach out to form alliances, share insights, and co-create the future of on-chain AI</p>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <ContentBox>
+        <img className='plus' src={plus} alt="" />
+        <h2>Partnership</h2>
+        <div className='middle-box'>
+          <div className='square'>
+          </div>
+          <h4>Collaboration</h4>
+        </div>
+        <div className='button-box'>
+          <Link to={''} className='start-button'>Partnership Requests</Link>
+        </div>
+        <div className='bottom-box'>
+          <p className='desc'>Reach out to form alliances, share insights, and co-create the future of on-chain AI</p>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Partenership)

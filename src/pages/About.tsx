@@ -37,7 +37,7 @@ const Wrapper = styled.main`
 `
 
 const About = () => {
-  const { showMobileMenu, setShowMobileMenu } = useDialogContext()
+  const { showMobileMenu } = useDialogContext()
   return (
     <Wrapper>
       {showMobileMenu && <MoblieMenu />

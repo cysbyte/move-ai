@@ -116,49 +116,49 @@ const ContentBox = styled.div`
 `
 
 const RealTime = () => {
-    const data = [
-        {
-            id: 1,
-            title: 'Smart Risk Detection',
-            desc: 'Continuously analyzes dApps, transactions, and contracts for potential threats',
-            icon: icon1,
-        },
-        {
-            id: 2,
-            title: 'AI-Powered Security',
-            desc: 'Provides alerts for vulnerabilities in real time',
-            icon: icon2,
-        },
-        {
-            id: 3,
-            title: 'Movement Ecosystem Optimization',
-            desc: 'Seamlessly integrated with Movement network applications',
-            icon: icon3,
-        },
-    ]
-    return (
-        <Wrapper>
-            <ContentBox>
-                <div className='left-box'>
-                    <h1>Real-Time Threat Detection</h1>
-                    <p className='desc'>ShieldCore Suite scans your interactions across GameFi and DeFi applications to detect vulnerabilities like phishing sites, malicious contracts, and scam tokens</p>
-                    <img src={bg} alt="" />
+  const data = [
+    {
+      id: 1,
+      title: 'Smart Risk Detection',
+      desc: 'Continuously analyzes dApps, transactions, and contracts for potential threats',
+      icon: icon1,
+    },
+    {
+      id: 2,
+      title: 'AI-Powered Security',
+      desc: 'Provides alerts for vulnerabilities in real time',
+      icon: icon2,
+    },
+    {
+      id: 3,
+      title: 'Movement Ecosystem Optimization',
+      desc: 'Seamlessly integrated with Movement network applications',
+      icon: icon3,
+    },
+  ]
+  return (
+    <Wrapper>
+      <ContentBox>
+        <div className='left-box'>
+          <h1>Real-Time Threat Detection</h1>
+          <p className='desc'>ShieldCore Suite scans your interactions across GameFi and DeFi applications to detect vulnerabilities like phishing sites, malicious contracts, and scam tokens</p>
+          <img src={bg} alt="" />
+        </div>
+        <div className='right-box'>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <div className='item-card-right'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='right-box'>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <div className='item-card-right'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>))
-                    }
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+              </div>))
+          }
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(RealTime)

@@ -82,20 +82,20 @@ const ContentBox = styled.div`
 `
 
 const Hero = () => {
-    const { setShowSubMenu } = useDialogContext()
-    return (
-        <Wrapper onClick={() => setShowSubMenu(false)}>
-            <ContentBox>
-                <div className='left-box'>
-                    <h1>Power AI Agents on Movement with FusionX
-                    </h1>
-                    <p className='desc'>FusionX is the ultimate platform to create, train, and deploy AI Agents seamlessly on the Movement network. Scale your AI economy, automate interactions, and bring intelligent agents to life—all without complex development</p>
-                    <p className='note'>FusionX Suite—where innovation meets simplicity</p>
-                </div>
-                <img className='bg-img' src={bg} alt="" />
-            </ContentBox>
-        </Wrapper>
-    )
+  const { setShowSubMenu } = useDialogContext()
+  return (
+    <Wrapper onClick={() => setShowSubMenu(false)}>
+      <ContentBox>
+        <div className='left-box'>
+          <h1>Power AI Agents on Movement with FusionX
+          </h1>
+          <p className='desc'>FusionX is the ultimate platform to create, train, and deploy AI Agents seamlessly on the Movement network. Scale your AI economy, automate interactions, and bring intelligent agents to life—all without complex development</p>
+          <p className='note'>FusionX Suite—where innovation meets simplicity</p>
+        </div>
+        <img className='bg-img' src={bg} alt="" />
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Hero)

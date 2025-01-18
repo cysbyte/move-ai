@@ -138,52 +138,52 @@ const ContentBox = styled.div`
 
 const From = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'Select a Template',
-            desc: 'Choose from our library of ready-to-use templates for DeFi, NFTs, or DAOs',
-            icon: icon1,
-        },
-        {
-            id: 2,
-            title: 'Customize Parameters',
-            desc: 'Adjust your contract settings like rewards, fees, and durations with an intuitive editor',
-            icon: icon2,
-        },
-        {
-            id: 3,
-            title: 'Deploy with One Click',
-            desc: 'Launch directly to the blockchain with automatic gas optimization and built-in security checks',
-            icon: icon3,
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'Select a Template',
+      desc: 'Choose from our library of ready-to-use templates for DeFi, NFTs, or DAOs',
+      icon: icon1,
+    },
+    {
+      id: 2,
+      title: 'Customize Parameters',
+      desc: 'Adjust your contract settings like rewards, fees, and durations with an intuitive editor',
+      icon: icon2,
+    },
+    {
+      id: 3,
+      title: 'Deploy with One Click',
+      desc: 'Launch directly to the blockchain with automatic gas optimization and built-in security checks',
+      icon: icon3,
+    },
+  ]
 
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <div className='left-box'>
-                    <h1>From idea to deployment in three simple steps</h1>
-                    <p>MoveFlow simplifies smart contract creation with a step-by-step process anyone can follow</p>
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <div className='left-box'>
+          <h1>From idea to deployment in three simple steps</h1>
+          <p>MoveFlow simplifies smart contract creation with a step-by-step process anyone can follow</p>
+        </div>
+        <div className='right-box'>
+          <img src={arrow} className='arrow1' alt="" />
+          <img src={arrow} className='arrow2' alt="" />
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <div className='item-card-right'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='right-box'>
-                    <img src={arrow} className='arrow1' alt="" />
-                    <img src={arrow} className='arrow2' alt="" />
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <div className='item-card-right'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>))
-                    }
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+              </div>))
+          }
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(From)

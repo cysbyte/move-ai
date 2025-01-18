@@ -109,22 +109,22 @@ const ContentBox = styled.div`
 const Join = () => {
   return (
     <Wrapper>
-        <ContentBox>
-            <h6>Community & Resources</h6>
-            <h2>Join the MoveAI<br/> Community</h2>
-            <p className='desc'>Sensitive industries require trust. MoveAI’s privacy-first approach ensures data security without sacrificing<br/> performance, enabling sectors like healthcare to adopt decentralized AI confidently</p>
-            <div className='bottom-box'>
-                <div className='left-box'>
-                    <img src={twitter} alt="" />
-                    <img src={telegram} alt="" />
-                    <img src={github} alt="" />
-                    <img src={b} alt="" />
-                </div>
-                <div className='right-box'>
-                    <div className='square'></div>
-                </div>
-            </div>
-        </ContentBox>
+      <ContentBox>
+        <h6>Community & Resources</h6>
+        <h2>Join the MoveAI<br/> Community</h2>
+        <p className='desc'>Sensitive industries require trust. MoveAI’s privacy-first approach ensures data security without sacrificing<br/> performance, enabling sectors like healthcare to adopt decentralized AI confidently</p>
+        <div className='bottom-box'>
+          <div className='left-box'>
+            <img src={twitter} alt="" />
+            <img src={telegram} alt="" />
+            <img src={github} alt="" />
+            <img src={b} alt="" />
+          </div>
+          <div className='right-box'>
+            <div className='square'></div>
+          </div>
+        </div>
+      </ContentBox>
     </Wrapper>
   )
 }

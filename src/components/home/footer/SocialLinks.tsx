@@ -13,9 +13,9 @@ const Wrapper = styled.div`
 const SocialLinks = () => {
   return (
     <Wrapper>
-        <Link to=''><img src={twitter} alt="" /></Link>
-        <Link to=''><img src={telegram} alt="" /></Link>
-        <Link to=''><img src={github} alt="" /></Link>
+      <Link to=''><img src={twitter} alt="" /></Link>
+      <Link to=''><img src={telegram} alt="" /></Link>
+      <Link to=''><img src={github} alt="" /></Link>
     </Wrapper>
   )
 }

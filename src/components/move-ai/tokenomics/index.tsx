@@ -165,75 +165,75 @@ const ItemCard = styled.div<{ id: number }>`
 `
 
 const data = [
-    {
-        id: 1,
-        title: 'Total Supply',
-        desc: <p><span>8.8</span> billion tokens</p>
-    },
-    {
-        id: 2,
-        title: 'Mining & Rewards',
-        desc: <p><span>3.8</span> billion mined over <span>18</span> months for uptime and contributions</p>,
+  {
+    id: 1,
+    title: 'Total Supply',
+    desc: <p><span>8.8</span> billion tokens</p>
+  },
+  {
+    id: 2,
+    title: 'Mining & Rewards',
+    desc: <p><span>3.8</span> billion mined over <span>18</span> months for uptime and contributions</p>,
 
-    },
-    {
-        id: 3,
-        title: 'Initial Circulation',
-        desc: <p><span>4.4</span> billion in liquidity pools</p>,
-    },
-    {
-        id: 4,
-        title: 'Team Allocation',
-        desc: <p><span>600</span> million tokens (<span>2</span>-year vesting)</p>,
-    },
-    {
-        id: 5,
-        title: 'Staking & Penalties',
-        desc: <p>Ensure long-term alignment with minimum staking periods and early withdrawal fees</p>,
-    },
-    {
-        id: 6,
-        title: 'Governance Benefits',
-        desc: <p>Larger stakes confer greater influence in network decisions</p>,
-    },
-    {
-        id: 7,
-        title: 'Transaction Tax',
-        desc: <p>Funds DAO-driven initiatives and development</p>,
-    },
+  },
+  {
+    id: 3,
+    title: 'Initial Circulation',
+    desc: <p><span>4.4</span> billion in liquidity pools</p>,
+  },
+  {
+    id: 4,
+    title: 'Team Allocation',
+    desc: <p><span>600</span> million tokens (<span>2</span>-year vesting)</p>,
+  },
+  {
+    id: 5,
+    title: 'Staking & Penalties',
+    desc: <p>Ensure long-term alignment with minimum staking periods and early withdrawal fees</p>,
+  },
+  {
+    id: 6,
+    title: 'Governance Benefits',
+    desc: <p>Larger stakes confer greater influence in network decisions</p>,
+  },
+  {
+    id: 7,
+    title: 'Transaction Tax',
+    desc: <p>Funds DAO-driven initiatives and development</p>,
+  },
 ]
 
 const Tokenomics = () => {
-    return (
-        <Wrapper>
-            <img className='line' src={line} alt="" />
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <img className='plus' src={plus} alt="" />
-                <h2>Tokenomics</h2>
-                <div className='bottom-box'>
-                    <div className='left-box'>
-                        <h4>Incentive-Driven<br /> AI Collaboration</h4>
-                        <Link className='explore-button' to={''}>Explore Tokenomics</Link>
-                    </div>
-                    <div className='right-box'>
-                        {
-                            data.map((item) => (
-                                <ItemCard id={item.id}>
-                                    <div>
-                                        <h5>{item.title}</h5>
-                                    </div>
-                                    <div className='desc'>
-                                        {item.desc}
-                                    </div>
-                                </ItemCard>
-                            ))
-                        }
-                    </div>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <img className='line' src={line} alt="" />
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <img className='plus' src={plus} alt="" />
+        <h2>Tokenomics</h2>
+        <div className='bottom-box'>
+          <div className='left-box'>
+            <h4>Incentive-Driven<br /> AI Collaboration</h4>
+            <Link className='explore-button' to={''}>Explore Tokenomics</Link>
+          </div>
+          <div className='right-box'>
+            {
+              data.map((item) => (
+                <ItemCard id={item.id}>
+                  <div>
+                    <h5>{item.title}</h5>
+                  </div>
+                  <div className='desc'>
+                    {item.desc}
+                  </div>
+                </ItemCard>
+              ))
+            }
+          </div>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Tokenomics)

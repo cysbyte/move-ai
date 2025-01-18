@@ -7,9 +7,9 @@
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "deploy:gray": "vite build --mode gray && node deploy-oss.mjs neural-gray",
-    "deploy:pro": "vite build"
+    "deploy": "vite build"
   },
   "dependencies": {
     "antd": "^5.22.3",

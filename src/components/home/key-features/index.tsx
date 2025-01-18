@@ -125,50 +125,50 @@ const Wrapper = styled.section`
 
 const KeyFeatures = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'Deploy Decentralized AI Applications & Agents',
-            desc: 'Neural Network provides scalable AI infrastructure with low-cost transactions, delivering robust security on Ethereum.',
-        },
-        {
-            id: 2,
-            title: 'AI Agent Sequencer & OptiChain',
-            desc: "OptiChain's Layer 3 and AI Agent Sequencer enable seamless, autonomous collaboration among decentralized AI agents, driving the future of decentralized AI.",
-        },
-        {
-            id: 3,
-            title: 'Cognitively Decentralized Mechanism (CogDec)',
-            desc: 'CogDec validates contributions based on utility, fostering high-quality collaboration among AI agents and building a globally distributed AI ecosystem',
-        },
-        {
-            id: 4,
-            title: 'AI-Optimized Modular Architecture',
-            desc: "Neural Network's modular architecture enables developers to build scalable, high-performance AI systems by separating execution, consensus, and data availability into dedicated layers.",
-        },
-    ]
-    return (
-        <Wrapper>
-            <h2>Core Features</h2>
-            <div className='container'>
-                <div className='middle-box'>
-                    <h4>The Scalable AI Infrastructure Built on Ethereum’s Security</h4>
-                    <p>Neural Network is a Layer 2 AI infrastructure powered by the OP Stack, delivering secure, scalable, and optimized support for decentralized AI applications and autonomous agent deployment.</p>
-                </div>
-                <div className='features-box'>
-                    {
-                        data.map((item) => (
-                            <div key={item.id} className='feature-card'>
-                                <h3>{item.title}</h3>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
-            <img className='bg-img' src={bg} height={416} alt="" />
-        </Wrapper>
-    )
+  const data = [
+    {
+      id: 1,
+      title: 'Deploy Decentralized AI Applications & Agents',
+      desc: 'Neural Network provides scalable AI infrastructure with low-cost transactions, delivering robust security on Ethereum.',
+    },
+    {
+      id: 2,
+      title: 'AI Agent Sequencer & OptiChain',
+      desc: "OptiChain's Layer 3 and AI Agent Sequencer enable seamless, autonomous collaboration among decentralized AI agents, driving the future of decentralized AI.",
+    },
+    {
+      id: 3,
+      title: 'Cognitively Decentralized Mechanism (CogDec)',
+      desc: 'CogDec validates contributions based on utility, fostering high-quality collaboration among AI agents and building a globally distributed AI ecosystem',
+    },
+    {
+      id: 4,
+      title: 'AI-Optimized Modular Architecture',
+      desc: "Neural Network's modular architecture enables developers to build scalable, high-performance AI systems by separating execution, consensus, and data availability into dedicated layers.",
+    },
+  ]
+  return (
+    <Wrapper>
+      <h2>Core Features</h2>
+      <div className='container'>
+        <div className='middle-box'>
+          <h4>The Scalable AI Infrastructure Built on Ethereum’s Security</h4>
+          <p>Neural Network is a Layer 2 AI infrastructure powered by the OP Stack, delivering secure, scalable, and optimized support for decentralized AI applications and autonomous agent deployment.</p>
+        </div>
+        <div className='features-box'>
+          {
+            data.map((item) => (
+              <div key={item.id} className='feature-card'>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <img className='bg-img' src={bg} height={416} alt="" />
+    </Wrapper>
+  )
 }
 
 export default KeyFeatures

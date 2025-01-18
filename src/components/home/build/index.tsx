@@ -74,47 +74,47 @@ const Wrapper = styled.section`
 `
 
 const Build = () => {
-    const leftData = [
-        {
-            id: 1,
-            title: 'Decentralized Model Training',
-            desc: "Leverage global resources to train AI models collaboratively without a central server."
-        },
-        {
-            id: 2,
-            title: 'Real-Time Inference',
-            desc: "Low-latency AI insights, ideal for real-time applications like finance and healthcare."
-        },
-        {
-            id: 3,
-            title: 'Optimized Performance Monitoring',
-            desc: "Real-time analytics for continuous AI improvement."
-        },
-    ]
-    const rightData = [
-        {
-            id: 1,
-            title: 'AI Collaboration & Knowledge Sharing',
-            desc: "AI agents share insights across chains, enhancing model effectiveness.",
-        },
-        {
-            id: 2,
-            title: 'Privacy-First Data Handling',
-            desc: "Rewards for contributions, powering a dynamic AI ecosystem.",
-        },
-        {
-            id: 3,
-            title: 'Privacy-First Data Handling',
-            desc: "Zero-knowledge proofs and Federated Learning protect data privacy in training.",
-        },
-        {
-            id: 4,
-            title: 'Interoperable AI Marketplace',
-            desc: "A decentralized space for AI asset sharing, licensing, and monetization.",
-        },
-    ]
+  const leftData = [
+    {
+      id: 1,
+      title: 'Decentralized Model Training',
+      desc: "Leverage global resources to train AI models collaboratively without a central server."
+    },
+    {
+      id: 2,
+      title: 'Real-Time Inference',
+      desc: "Low-latency AI insights, ideal for real-time applications like finance and healthcare."
+    },
+    {
+      id: 3,
+      title: 'Optimized Performance Monitoring',
+      desc: "Real-time analytics for continuous AI improvement."
+    },
+  ]
+  const rightData = [
+    {
+      id: 1,
+      title: 'AI Collaboration & Knowledge Sharing',
+      desc: "AI agents share insights across chains, enhancing model effectiveness.",
+    },
+    {
+      id: 2,
+      title: 'Privacy-First Data Handling',
+      desc: "Rewards for contributions, powering a dynamic AI ecosystem.",
+    },
+    {
+      id: 3,
+      title: 'Privacy-First Data Handling',
+      desc: "Zero-knowledge proofs and Federated Learning protect data privacy in training.",
+    },
+    {
+      id: 4,
+      title: 'Interoperable AI Marketplace',
+      desc: "A decentralized space for AI asset sharing, licensing, and monetization.",
+    },
+  ]
 
-    const LeftContainer = styled.div`
+  const LeftContainer = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -168,7 +168,7 @@ const Build = () => {
             }
         }
     `
-    const RightContainer = styled.div`
+  const RightContainer = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 1.2rem;
@@ -219,37 +219,37 @@ const Build = () => {
             }
         }
     `
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bgBuild} alt="" />
-            <h2>Build, Train, and Deploy AI, Your Way!</h2>
-            <div className='middle-box'>
-                <div className='container'>
-                    <LeftContainer>
-                        {
-                            leftData.map((item) => (
-                                <div key={item.id} className='left-card'>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.desc}</p>
-                                </div>
-                            ))
-                        }
-                    </LeftContainer>
-                    <RightContainer>
-                        {
-                            rightData.map((item) => (
-                                <div key={item.id} className='right-card'>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.desc}</p>
-                                </div>
-                            ))
-                        }
-                    </RightContainer>
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bgBuild} alt="" />
+      <h2>Build, Train, and Deploy AI, Your Way!</h2>
+      <div className='middle-box'>
+        <div className='container'>
+          <LeftContainer>
+            {
+              leftData.map((item) => (
+                <div key={item.id} className='left-card'>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
                 </div>
-                <p className='bottom-desc'>CTA: Explore Use cases. [Link]</p>
-            </div>
-        </Wrapper>
-    )
+              ))
+            }
+          </LeftContainer>
+          <RightContainer>
+            {
+              rightData.map((item) => (
+                <div key={item.id} className='right-card'>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              ))
+            }
+          </RightContainer>
+        </div>
+        <p className='bottom-desc'>CTA: Explore Use cases. [Link]</p>
+      </div>
+    </Wrapper>
+  )
 }
 
 export default Build

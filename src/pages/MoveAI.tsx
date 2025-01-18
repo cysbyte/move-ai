@@ -82,4 +82,4 @@ const MoveAI = () => {
   )
 }
 
-export default MoveAI
+export default React.memo(MoveAI)

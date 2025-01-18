@@ -226,7 +226,7 @@ const Header = () => {
   const { setShowMobileMenu, showSubMenu, setShowSubMenu } = useDialogContext()
 
   const handleClick = () => {
-      setShowDisconnect(prev => !prev)
+    setShowDisconnect(prev => !prev)
   }
 
   const handleDisconnect = () => {

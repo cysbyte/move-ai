@@ -32,35 +32,35 @@ const Wrapper = styled.section`
 `
 
 export const products = [
-    {
-        id: 1,
-        name: 'FusionX Suite',
-        link: '/fusionx',
-    },
-    {
-        id: 2,
-        name: 'ShieldCore Suite',
-        link: '/shield-core',
-    },
-    {
-        id: 3,
-        name: 'Move flow',
-        link: '/move-flow',
-    },
+  {
+    id: 1,
+    name: 'FusionX Suite',
+    link: '/fusionx',
+  },
+  {
+    id: 2,
+    name: 'ShieldCore Suite',
+    link: '/shield-core',
+  },
+  {
+    id: 3,
+    name: 'Move flow',
+    link: '/move-flow',
+  },
 ]
 
 const Submenu = () => {
 
-    return (
-        <Wrapper>
-            {
-                products.map((item) => (
-                    <Link className='menu-item' to={item.link} key={item.id}>{item.name}
-                    </Link>
-                ))
-            }
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      {
+        products.map((item) => (
+          <Link className='menu-item' to={item.link} key={item.id}>{item.name}
+          </Link>
+        ))
+      }
+    </Wrapper>
+  )
 }
 
 export default Submenu

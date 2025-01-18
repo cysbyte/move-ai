@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Card = ({id, title, desc}: 
     {id: number, title: string, desc: string}) => {
-    const Wrapper = styled.div`
+  const Wrapper = styled.div`
         width: 100%;
         h6 {
             font-family: Inter;
@@ -29,8 +29,8 @@ const Card = ({id, title, desc}:
     `
   return (
     <Wrapper key={id}>
-        <h6>{title}</h6>
-        <p>{desc}</p>
+      <h6>{title}</h6>
+      <p>{desc}</p>
     </Wrapper>
   )
 }

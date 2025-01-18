@@ -47,7 +47,7 @@ const Wrapper = styled.p`
 const Desc2 = () => {
   return (
     <Wrapper>
-        <span>600</span><span> billion tokens with a </span><span>2</span><span>-year vesting</span>
+      <span>600</span><span> billion tokens with a </span><span>2</span><span>-year vesting</span>
     </Wrapper>
   )
 }

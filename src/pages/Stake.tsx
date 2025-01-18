@@ -26,16 +26,16 @@ const Wrapper = styled.main`
 
 const Stake = () => {
 
-    return (
-        <Wrapper>
-            <div className='upper-box'>
-                <Header/>
-                <Hero/>
-                <Features/>
-            </div>
-            {/* <Footer/> */}
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className='upper-box'>
+        <Header/>
+        <Hero/>
+        <Features/>
+      </div>
+      {/* <Footer/> */}
+    </Wrapper>
+  )
 }
 
 export default Stake

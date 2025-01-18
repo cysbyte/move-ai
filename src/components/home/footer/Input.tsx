@@ -44,8 +44,8 @@ const Input = ({placeholder}:
     {title: string, placeholder: string}) => {
   return (
     <Wrapper>
-         {/* <label htmlFor="name">{title}</label> */}
-         <input type="text" placeholder={placeholder}/>
+      {/* <label htmlFor="name">{title}</label> */}
+      <input type="text" placeholder={placeholder}/>
     </Wrapper>
   )
 }

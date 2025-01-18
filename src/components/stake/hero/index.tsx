@@ -76,24 +76,24 @@ const Wrapper = styled.section`
     }
 
   `
-  const FixWidthBox = styled.div`
+const FixWidthBox = styled.div`
     width: 1040px;
     margin: auto auto;
   `
 const Hero = () => {
   return (
     <Wrapper>
-        <FixWidthBox>
-          <h1>Simple and Secure Staking</h1>
-          <p>Join now and enjoy the highest returns available. Act early for greater benefits!</p>
-          <div className='mir-box'>
-              <p className='mir'>MIR</p>
-              <p className='percent'>15.00%</p>
-          </div>
-          <div className='connect-button'>
-            <ConnectButton onClick={undefined} loading={false}>Connect Wallet</ConnectButton>
-          </div>
-        </FixWidthBox>
+      <FixWidthBox>
+        <h1>Simple and Secure Staking</h1>
+        <p>Join now and enjoy the highest returns available. Act early for greater benefits!</p>
+        <div className='mir-box'>
+          <p className='mir'>MIR</p>
+          <p className='percent'>15.00%</p>
+        </div>
+        <div className='connect-button'>
+          <ConnectButton onClick={undefined} loading={false}>Connect Wallet</ConnectButton>
+        </div>
+      </FixWidthBox>
     </Wrapper>
   )
 }

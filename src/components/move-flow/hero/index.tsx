@@ -90,15 +90,15 @@ const ContentBox = styled.div`
 
 
 const Hero = () => {
-    const {setShowSubMenu} = useDialogContext()
+  const {setShowSubMenu} = useDialogContext()
   return (
     <Wrapper onClick={()=>setShowSubMenu(false)}>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <h1>Build smart contracts effortlessly with MoveFlow</h1>
-            <p className='desc'>Empower your ideas with a platform that turns concepts into blockchain applications. No coding required—fast, intuitive, and ready to deploy</p>
-            <a href='#/move-desk' className='try-button'>Get Started</a>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h1>Build smart contracts effortlessly with MoveFlow</h1>
+        <p className='desc'>Empower your ideas with a platform that turns concepts into blockchain applications. No coding required—fast, intuitive, and ready to deploy</p>
+        <a href='#/move-desk' className='try-button'>Get Started</a>
+      </ContentBox>
     </Wrapper>
   )
 }

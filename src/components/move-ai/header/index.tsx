@@ -93,9 +93,9 @@ const Header = () => {
       <h2 className='logo'>MoveAI</h2>
       <div className='right-box'>
         <button className='connect-button'
-                tabIndex={0}
-                onClick={handleClick}
-                onBlur={handleBlur}
+          tabIndex={0}
+          onClick={handleClick}
+          onBlur={handleBlur}
         >
           Connect Wallet
         </button>

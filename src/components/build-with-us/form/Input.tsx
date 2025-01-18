@@ -92,29 +92,29 @@ const Input = ({ title, placeholder, fields, googleFormId, optional }:
         }[]
     }) => {
 
-    const handleChange = (e: any) => {
-        fields.forEach(field => {
-            if (field.name === title) {
-                field.value = e.target.value
-            }
-        });
-        console.log(fields)
-    }
-    return (
-        <Wrapper>
-            <div className='name-box'>
-                <p className='star'>{!optional ? '*' : ''}</p>
-                <label htmlFor="name">{title} </label>
-            </div>
-            <input
-                type="text"
-                placeholder={placeholder}
-                onChange={(e) => handleChange(e)}
-                id={googleFormId}
-                name={'entry.' + googleFormId}
-            />
-        </Wrapper>
-    )
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    fields.forEach(field => {
+      if (field.name === title) {
+        field.value = e.target.value
+      }
+    });
+    console.log(fields)
+  }
+  return (
+    <Wrapper>
+      <div className='name-box'>
+        <p className='star'>{!optional ? '*' : ''}</p>
+        <label htmlFor="name">{title} </label>
+      </div>
+      <input
+        type="text"
+        placeholder={placeholder}
+        onChange={(e) => handleChange(e)}
+        id={googleFormId}
+        name={'entry.' + googleFormId}
+      />
+    </Wrapper>
+  )
 }
 
 export default Input

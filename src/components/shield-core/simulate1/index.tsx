@@ -92,14 +92,14 @@ const ContentBox = styled.div`
 const Simulate1 = () => {
   return (
     <Wrapper>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <h1>Simulate Interactions for Safer Web3 Transactions</h1>
-            <div className='bottom-box'>
-                <p>Get ready to experience unparalleled protection with AI-powered, real-time guidance. ShieldCore Suite is your soon-to-be-released Web3 security companion</p>
-                <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSdfjqkAqLF5vEyVZerr2klkzkYFQJgHjo9DyFMiL_qt9NLPaQ/viewform?usp=dialog' className='try-button'>Join the Waitlist</a>
-            </div>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h1>Simulate Interactions for Safer Web3 Transactions</h1>
+        <div className='bottom-box'>
+          <p>Get ready to experience unparalleled protection with AI-powered, real-time guidance. ShieldCore Suite is your soon-to-be-released Web3 security companion</p>
+          <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSdfjqkAqLF5vEyVZerr2klkzkYFQJgHjo9DyFMiL_qt9NLPaQ/viewform?usp=dialog' className='try-button'>Join the Waitlist</a>
+        </div>
+      </ContentBox>
     </Wrapper>
   )
 }

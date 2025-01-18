@@ -5,7 +5,7 @@ import SocialLinks from './SocialLinks'
 import BottomLinks from './BottomLinks'
 
 const Footer = () => {
-    const Wrapper = styled.section`
+  const Wrapper = styled.section`
         width: 100%;
         height: 1078px;
         background-image: url('/bg-footer.svg');
@@ -13,7 +13,7 @@ const Footer = () => {
             height: 100%;
         }
     `
-    const BlogWrapper = styled.div`
+  const BlogWrapper = styled.div`
         width: 1040px;
         margin: auto auto;
         padding: 8rem 0rem;
@@ -113,7 +113,7 @@ const Footer = () => {
         }
     `
 
-    const SubscribeWrapper = styled.div`
+  const SubscribeWrapper = styled.div`
         width: 1040px;
         margin: auto auto;
         @media screen and (max-width: 1040px) {
@@ -157,66 +157,66 @@ const Footer = () => {
         }
     `
 
-    const BorderWrapper = styled.div`
+  const BorderWrapper = styled.div`
         width: 100%;
         height: auto;
         border-top: 1px solid #3D3D3D;
         padding: 7rem 0rem;
     `
     
-    const data = [
-        {
-            id: 1,
-            title: "Modular Architecture",
-            desc: "Insights on Neural Network’s layered structure supporting decentralized AI."
-        },
-        {
-            id: 2,
-            title: "Security & Privacy",
-            desc: "Explore how Neural Network uses ZKPs and cryptographic techniques for secure data handling."
-        },
-        {
-            id: 3,
-            title: "AI Collaboration & Development",
-            desc: "Learn how global contributors power innovation in AI models and applications."
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: "Modular Architecture",
+      desc: "Insights on Neural Network’s layered structure supporting decentralized AI."
+    },
+    {
+      id: 2,
+      title: "Security & Privacy",
+      desc: "Explore how Neural Network uses ZKPs and cryptographic techniques for secure data handling."
+    },
+    {
+      id: 3,
+      title: "AI Collaboration & Development",
+      desc: "Learn how global contributors power innovation in AI models and applications."
+    },
+  ]
 
-    return (
-        <Wrapper>
-            <BlogWrapper>
-                <h2>Blog</h2>
-                <p>Explore Insights, Innovation, and the Future of Decentralized AI with Neural Network</p>
-                <div className='middle-box'>
-                    <h4>Featured Topics</h4>
-                    <div className='flex-container'>
-                        {
-                            data.map((item) => (
-                                <div key={item.id} className='flex-card'>
-                                    <h6>{item.title}</h6>
-                                    <p>{item.desc}</p>
-                                </div>
-                            ))
-                        }
-                    </div>
+  return (
+    <Wrapper>
+      <BlogWrapper>
+        <h2>Blog</h2>
+        <p>Explore Insights, Innovation, and the Future of Decentralized AI with Neural Network</p>
+        <div className='middle-box'>
+          <h4>Featured Topics</h4>
+          <div className='flex-container'>
+            {
+              data.map((item) => (
+                <div key={item.id} className='flex-card'>
+                  <h6>{item.title}</h6>
+                  <p>{item.desc}</p>
                 </div>
-                <p className='bottom-desc'>Stay connected with the latest trends, updates, and community stories from Neural Network.</p>
-            </BlogWrapper>
-            <BorderWrapper>
-                <SubscribeWrapper>
-                    <h2>Stay updated on Neural Network’s latest advancements</h2>
-                    <div className='middle-box'>
-                        <div className='input-box'>
-                            <Input title='' placeholder='E-mail' />
-                            <SubscribeButton />
-                        </div>
-                        <SocialLinks />
-                    </div>
-                    <BottomLinks />
-                </SubscribeWrapper>
-            </BorderWrapper>
-        </Wrapper>
-    )
+              ))
+            }
+          </div>
+        </div>
+        <p className='bottom-desc'>Stay connected with the latest trends, updates, and community stories from Neural Network.</p>
+      </BlogWrapper>
+      <BorderWrapper>
+        <SubscribeWrapper>
+          <h2>Stay updated on Neural Network’s latest advancements</h2>
+          <div className='middle-box'>
+            <div className='input-box'>
+              <Input title='' placeholder='E-mail' />
+              <SubscribeButton />
+            </div>
+            <SocialLinks />
+          </div>
+          <BottomLinks />
+        </SubscribeWrapper>
+      </BorderWrapper>
+    </Wrapper>
+  )
 }
 
 export default Footer

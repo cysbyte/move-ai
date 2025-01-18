@@ -47,7 +47,7 @@ const Wrapper = styled.p`
 const Desc4 = () => {
   return (
     <Wrapper>
-        <span>3.8</span><span> billion tokens mined over </span><span>18</span><span> months through network uptime</span>
+      <span>3.8</span><span> billion tokens mined over </span><span>18</span><span> months through network uptime</span>
     </Wrapper>
   )
 }

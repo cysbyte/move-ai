@@ -109,62 +109,62 @@ const ContentBox = styled.div`
 
 const How = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: <h5><span>Choose an AI</span><br/> Template Pick from a library of AI personalities, task-specific agents, or build one from scratch</h5>,
-            desc: 'Examples: Trading bots, Gaming NPCs, Social AI, Assistants for dApps',
-            icon: icon1,
-            arrow: arrow1,
-        },
-        {
-            id: 2,
-            title: <h5><span>Customize AI Behavior</span><br/> Fine-tune skills, interaction patterns, and autonomy level</h5>,
-            desc: 'Examples: Set financial logic for DeFi agents, create engagement rules for social AI',
-            icon: icon2,
-            arrow: arrow1,
-        },
-        {
-            id: 3,
-            title: <h5><span>Deploy on Movement</span><br/> One-click launch your AI Agent to interact with users and other AI Agents</h5>,
-            desc: 'Runs securely on-chain with transparent tracking and smart contract automation',
-            icon: icon3,
-            arrow: arrow1,
-        },
-        {
-            id: 4,
-            title: <h5><span>Monetize AI</span><br/> Create a marketplace for AI Agents as NFTs or offer AI-powered services</h5>,
-            desc: 'Enable AI Agents to generate revenue by performing automated on-chain actions',
-            icon: icon4,
-            arrow: arrow2,
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: <h5><span>Choose an AI</span><br/> Template Pick from a library of AI personalities, task-specific agents, or build one from scratch</h5>,
+      desc: 'Examples: Trading bots, Gaming NPCs, Social AI, Assistants for dApps',
+      icon: icon1,
+      arrow: arrow1,
+    },
+    {
+      id: 2,
+      title: <h5><span>Customize AI Behavior</span><br/> Fine-tune skills, interaction patterns, and autonomy level</h5>,
+      desc: 'Examples: Set financial logic for DeFi agents, create engagement rules for social AI',
+      icon: icon2,
+      arrow: arrow1,
+    },
+    {
+      id: 3,
+      title: <h5><span>Deploy on Movement</span><br/> One-click launch your AI Agent to interact with users and other AI Agents</h5>,
+      desc: 'Runs securely on-chain with transparent tracking and smart contract automation',
+      icon: icon3,
+      arrow: arrow1,
+    },
+    {
+      id: 4,
+      title: <h5><span>Monetize AI</span><br/> Create a marketplace for AI Agents as NFTs or offer AI-powered services</h5>,
+      desc: 'Enable AI Agents to generate revenue by performing automated on-chain actions',
+      icon: icon4,
+      arrow: arrow2,
+    },
+  ]
 
-    return (
-        <Wrapper>
-            <ContentBox>
-                <h1>How FusionX Works?</h1>
-                <div className='bottom-box'>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <div className='top-box'>
-                                    <div className='icon-box'>
-                                        <img src={item.icon} alt="" />
-                                        <img src={item.arrow} alt="" />
-                                    </div>
-                                    {item.title}
-                                </div>
-                                <div className='desc-box'>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
+  return (
+    <Wrapper>
+      <ContentBox>
+        <h1>How FusionX Works?</h1>
+        <div className='bottom-box'>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <div className='top-box'>
+                  <div className='icon-box'>
+                    <img src={item.icon} alt="" />
+                    <img src={item.arrow} alt="" />
+                  </div>
+                  {item.title}
                 </div>
-            </ContentBox>
-        </Wrapper>
-    )
+                <div className='desc-box'>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(How)

@@ -27,7 +27,7 @@ const Wrapper = styled.p`
 const Desc3 = () => {
   return (
     <Wrapper>
-        <span>4.4</span><span> billion in liquidity pool</span>
+      <span>4.4</span><span> billion in liquidity pool</span>
     </Wrapper>
   )
 }

@@ -31,10 +31,10 @@ const ToastMessage = styled.div<{ type: ToastType }>`
     type === "success"
       ? "#4CAF50"
       : type === "error"
-      ? "#F44336"
-      : type === "info"
-      ? "#2196F3"
-      : "#FFC107"};
+        ? "#F44336"
+        : type === "info"
+          ? "#2196F3"
+          : "#FFC107"};
   color: white;
   padding: 1rem;
   border-radius: 4px;

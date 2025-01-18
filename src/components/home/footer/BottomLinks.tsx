@@ -33,58 +33,58 @@ const Wrapper = styled.article`
     }
 `
 const BottomLinks = () => {
-    const data = [
-        {
-            id: 1,
-            name: 'Docs',
-            link: ''
-        },
-        {
-            id: 2,
-            name: 'Technology',
-            link: ''
-        },
-        {
-            id: 3,
-            name: 'Github',
-            link: ''
-        },
-        {
-            id: 4,
-            name: 'Privacy Policy',
-            link: ''
-        },
-        {
-            id: 5,
-            name: 'Brand Assets',
-            link: ''
-        },
-        {
-            id: 6,
-            name: 'Terms of Service',
-            link: ''
-        },
-        {
-            id: 7,
-            name: 'Partnership Request',
-            link: ''
-        },
+  const data = [
+    {
+      id: 1,
+      name: 'Docs',
+      link: ''
+    },
+    {
+      id: 2,
+      name: 'Technology',
+      link: ''
+    },
+    {
+      id: 3,
+      name: 'Github',
+      link: ''
+    },
+    {
+      id: 4,
+      name: 'Privacy Policy',
+      link: ''
+    },
+    {
+      id: 5,
+      name: 'Brand Assets',
+      link: ''
+    },
+    {
+      id: 6,
+      name: 'Terms of Service',
+      link: ''
+    },
+    {
+      id: 7,
+      name: 'Partnership Request',
+      link: ''
+    },
 
-    ]
-    return (
-        <Wrapper>
-            {
-                data.map((item) => (
-                    <Link key={item.id}
-                        className={`link ${item.id === 7 ? 'no-border' : ''}`}
-                        to={item.link}
-                    >
-                        {item.name}
-                    </Link>
-                ))
-            }
-        </Wrapper>
-    )
+  ]
+  return (
+    <Wrapper>
+      {
+        data.map((item) => (
+          <Link key={item.id}
+            className={`link ${item.id === 7 ? 'no-border' : ''}`}
+            to={item.link}
+          >
+            {item.name}
+          </Link>
+        ))
+      }
+    </Wrapper>
+  )
 }
 
 export default BottomLinks

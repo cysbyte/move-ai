@@ -129,21 +129,21 @@ const BottomBox = styled.div`
 `
 const Hero = () => {
 
-    return (
-        <Wrapper>
-            <div className='content'>
-                <h1>Create, Deploy,and Scale Decentralized<br /> AI with Neural Network</h1>
-                <p>Empowering Developers with a Trustless, Scalable Layer 2 Platform<br /> for AI Innovation</p>
-                <BottomBox>
-                    <div className='get-in-touch'>
-                        <p>CTA:  Get in Touch || Docs</p>
-                        <p>[Graphic Visualisation of Neural Network]</p>
-                    </div>
-                    <img src={arrow} width={49} alt="" />
-                </BottomBox>
-            </div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className='content'>
+        <h1>Create, Deploy,and Scale Decentralized<br /> AI with Neural Network</h1>
+        <p>Empowering Developers with a Trustless, Scalable Layer 2 Platform<br /> for AI Innovation</p>
+        <BottomBox>
+          <div className='get-in-touch'>
+            <p>CTA: Get in Touch || Docs</p>
+            <p>[Graphic Visualisation of Neural Network]</p>
+          </div>
+          <img src={arrow} width={49} alt="" />
+        </BottomBox>
+      </div>
+    </Wrapper>
+  )
 }
 
 export default Hero

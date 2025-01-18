@@ -59,29 +59,29 @@ const HeaderHeroWrapper = styled.div`
 `
 
 const Home = () => {
-    return (
-        <Wrapper>
-            <div className='upper-box'>
-                <img className='bg-gradient1' src={bgGradient1} alt="" />
-                <img className='bg-gradient2' src={bgGradient2} alt="" />
-                <HeaderHeroWrapper>
-                    <img className='bg-hero' src={bgHero} alt="" />
-                    <Header />
-                    <Hero />
-                </HeaderHeroWrapper>
-                <Stake/>
-                <KeyFeatures />
-                <Technology />
-                <Build />
-                <Ecosystem />
-                <Incentive />
-                <Privacy />
-                <Join />
-                <Footer />
-            </div>
-            {/* <Footer/> */}
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className='upper-box'>
+        <img className='bg-gradient1' src={bgGradient1} alt="" />
+        <img className='bg-gradient2' src={bgGradient2} alt="" />
+        <HeaderHeroWrapper>
+          <img className='bg-hero' src={bgHero} alt="" />
+          <Header />
+          <Hero />
+        </HeaderHeroWrapper>
+        <Stake/>
+        <KeyFeatures />
+        <Technology />
+        <Build />
+        <Ecosystem />
+        <Incentive />
+        <Privacy />
+        <Join />
+        <Footer />
+      </div>
+      {/* <Footer/> */}
+    </Wrapper>
+  )
 }
 
 export default Home

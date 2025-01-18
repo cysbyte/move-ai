@@ -4,26 +4,26 @@ import styled from 'styled-components'
 import plus from '@/assets/move-ai/scalable-plus.svg'
 
 const data = [
-    {
-        id: 1,
-        title: 'Conversational On-chain Movement',
-        desc: 'Communicate naturally; MoveAI executes your commands flawlessly',
-    },
-    {
-        id: 2,
-        title: 'Modular Architecture',
-        desc: 'Execution, consensus, and data availability layers are separated for optimal performance',
-    },
-    {
-        id: 3,
-        title: 'AI Agent Sequencer & L3 OptiChain',
-        desc: 'Autonomous agents collaborate seamlessly, coordinating complex tasks without manual overhead',
-    },
-    {
-        id: 4,
-        title: 'Cognitively Decentralized Mechanism (CogDec)',
-        desc: 'Contributions are validated by utility, fostering a globally distributed, high-quality AI ecosystem',
-    },
+  {
+    id: 1,
+    title: 'Conversational On-chain Movement',
+    desc: 'Communicate naturally; MoveAI executes your commands flawlessly',
+  },
+  {
+    id: 2,
+    title: 'Modular Architecture',
+    desc: 'Execution, consensus, and data availability layers are separated for optimal performance',
+  },
+  {
+    id: 3,
+    title: 'AI Agent Sequencer & L3 OptiChain',
+    desc: 'Autonomous agents collaborate seamlessly, coordinating complex tasks without manual overhead',
+  },
+  {
+    id: 4,
+    title: 'Cognitively Decentralized Mechanism (CogDec)',
+    desc: 'Contributions are validated by utility, fostering a globally distributed, high-quality AI ecosystem',
+  },
 ]
 
 const Wrapper = styled.section`
@@ -143,30 +143,30 @@ const FeaturesBox = styled.div`
 `
 
 const Scalable = () => {
-    return (
-        <Wrapper>
-            <ContentBox>
-                <img className='plus-svg' src={plus} alt="" />
-                <h2>The Scalable AI Infrastructure on Movement</h2>
-                <p className='desc'>MoveAi is a Layer 2 AI infrastructure that merges the modular Ethereum-centric<br/> approach with AI-driven execution and decentralized collaboration</p>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='flex-box' key={item.id}>
-                                <div>
-                                    <h5>{item.title}</h5>
-                                </div>
-                                <div>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                <Link to={''} className='learn-button'>Learn About Our Technology</Link>
-                </FeaturesBox>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <ContentBox>
+        <img className='plus-svg' src={plus} alt="" />
+        <h2>The Scalable AI Infrastructure on Movement</h2>
+        <p className='desc'>MoveAi is a Layer 2 AI infrastructure that merges the modular Ethereum-centric<br/> approach with AI-driven execution and decentralized collaboration</p>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='flex-box' key={item.id}>
+                <div>
+                  <h5>{item.title}</h5>
+                </div>
+                <div>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+          <Link to={''} className='learn-button'>Learn About Our Technology</Link>
+        </FeaturesBox>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Scalable)

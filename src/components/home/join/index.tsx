@@ -101,19 +101,19 @@ const Wrapper = styled.section`
     }
 `
 const Join = () => {
-    return (
-        <Wrapper>
-            <div className='container'>
-                <div className='upper-box'>
-                    <img src={bgJoin} alt="" />
-                    <h3>Join the Neural Network Community</h3>
-                    <p>Be part of the future of decentralized AI. Join our community of developers, researchers, and enthusiasts<br/> to collaborate, innovate, and shape the future of AI.</p>
-                    <Link className='join-telegram' to=''>Join Telegram</Link>
-                </div>
-                <img className='bottom-img' src={join} alt="" />
-            </div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className='container'>
+        <div className='upper-box'>
+          <img src={bgJoin} alt="" />
+          <h3>Join the Neural Network Community</h3>
+          <p>Be part of the future of decentralized AI. Join our community of developers, researchers, and enthusiasts<br/> to collaborate, innovate, and shape the future of AI.</p>
+          <Link className='join-telegram' to=''>Join Telegram</Link>
+        </div>
+        <img className='bottom-img' src={join} alt="" />
+      </div>
+    </Wrapper>
+  )
 }
 
 export default Join

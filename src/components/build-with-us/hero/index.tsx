@@ -142,55 +142,55 @@ const ContentBox = styled.div`
 
 const Hero = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'Innovative Technology',
-            desc: 'Utilize our AI Agent Engine Layer to create smart, decentralized applications',
-            icon: icon1,
-        },
-        {
-            id: 2,
-            title: 'Collaborative Community',
-            desc: 'Be part of a vibrant community dedicated to advancing AI and blockchain technologies',
-            icon: icon2,
-        },
-        {
-            id: 3,
-            title: 'Comprehensive Support',
-            desc: 'Access a wealth of resources and support to bring your ideas to life',
-            icon: icon3,
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'Innovative Technology',
+      desc: 'Utilize our AI Agent Engine Layer to create smart, decentralized applications',
+      icon: icon1,
+    },
+    {
+      id: 2,
+      title: 'Collaborative Community',
+      desc: 'Be part of a vibrant community dedicated to advancing AI and blockchain technologies',
+      icon: icon2,
+    },
+    {
+      id: 3,
+      title: 'Comprehensive Support',
+      desc: 'Access a wealth of resources and support to bring your ideas to life',
+      icon: icon3,
+    },
+  ]
     
-    const {setShowSubMenu} = useDialogContext()
+  const {setShowSubMenu} = useDialogContext()
 
-    return (
-        <Wrapper onClick={()=>setShowSubMenu(false)}>
-            <ContentBox>
-                <div className='top-box'>
-                    <h1>Build with MoveAI</h1>
-                    <h6>Join Us in Shaping the Future of Decentralized AI</h6>
-                </div>
-                <h3>Why Build with MoveAI?</h3>
-                <div className='middle-box'>
-                    {
-                        data.map((item)=>(
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <h5>{item.title}</h5>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-                <div className='bottom-box'>
-                    <p className='submit'>Submit Your Project</p>
-                    <p className='ready'>Ready to make an impact?</p>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper onClick={()=>setShowSubMenu(false)}>
+      <ContentBox>
+        <div className='top-box'>
+          <h1>Build with MoveAI</h1>
+          <h6>Join Us in Shaping the Future of Decentralized AI</h6>
+        </div>
+        <h3>Why Build with MoveAI?</h3>
+        <div className='middle-box'>
+          {
+            data.map((item)=>(
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </div>
+        <div className='bottom-box'>
+          <p className='submit'>Submit Your Project</p>
+          <p className='ready'>Ready to make an impact?</p>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default Hero

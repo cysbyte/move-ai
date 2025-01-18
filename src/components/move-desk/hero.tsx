@@ -13,69 +13,69 @@ import data4Icon2 from '@/assets/move-desk/data4/2.svg'
 import data4Icon3 from '@/assets/move-desk/data4/3.svg'
 
 const data1 = [
-    {
-        id: 1,
-        title: 'Boost your content pipeline',
-        desc: 'Streamline content creation from idea to publication. Turn videos into blogs, speed up SEO research, and optimize articles for brand voice and keywords',
-        icon: data1Icon1,
-    },
-    {
-        id: 2,
-        title: 'Create viral videos',
-        desc: 'Turn trending topics into viral TikTok videosConvert popular subreddit discussions to short-form content that boosts engagement',
-        icon: data1Icon2,
-    },
+  {
+    id: 1,
+    title: 'Boost your content pipeline',
+    desc: 'Streamline content creation from idea to publication. Turn videos into blogs, speed up SEO research, and optimize articles for brand voice and keywords',
+    icon: data1Icon1,
+  },
+  {
+    id: 2,
+    title: 'Create viral videos',
+    desc: 'Turn trending topics into viral TikTok videosConvert popular subreddit discussions to short-form content that boosts engagement',
+    icon: data1Icon2,
+  },
 ]
 
 const data2 = [
-    {
-        id: 1,
-        title: 'Analyze complex datasets',
-        desc: 'Instantly analyze complex data to answer questionswithout lengthy queries. Generate executive-levelinsights rapidly and make data-driven decisions',
-        icon: data2Icon1,
-    },
-    {
-        id: 2,
-        title: 'Personalize sales prospecting and outreach',
-        desc: 'Research prospects and review sites to identify pain points. Craft personalized outreachaddressing specific client needs, not generic pitches',
-        icon: data2Icon2,
-    },
+  {
+    id: 1,
+    title: 'Analyze complex datasets',
+    desc: 'Instantly analyze complex data to answer questionswithout lengthy queries. Generate executive-levelinsights rapidly and make data-driven decisions',
+    icon: data2Icon1,
+  },
+  {
+    id: 2,
+    title: 'Personalize sales prospecting and outreach',
+    desc: 'Research prospects and review sites to identify pain points. Craft personalized outreachaddressing specific client needs, not generic pitches',
+    icon: data2Icon2,
+  },
 ]
 
 const data3 = [
-    {
-        id: 1,
-        desc: 'Automate market research and prospecting toidentify trends, opportunities, and personalizeoutreach to potential clients faster',
-        icon: data3Icon1,
-    },
-    {
-        id: 2,
-        desc: 'Generate viral, high-converting content forvarious marketing channels at scale based oncurrent trends',
-        icon: data3Icon2,
-    },
-    {
-        id: 3,
-        desc: 'Analyze complex customer data to uncoveractionable insights, optimizing campaigns andboosting ROl',
-        icon: data3Icon3,
-    },
+  {
+    id: 1,
+    desc: 'Automate market research and prospecting toidentify trends, opportunities, and personalizeoutreach to potential clients faster',
+    icon: data3Icon1,
+  },
+  {
+    id: 2,
+    desc: 'Generate viral, high-converting content forvarious marketing channels at scale based oncurrent trends',
+    icon: data3Icon2,
+  },
+  {
+    id: 3,
+    desc: 'Analyze complex customer data to uncoveractionable insights, optimizing campaigns andboosting ROl',
+    icon: data3Icon3,
+  },
 
 ]
 const data4 = [
-    {
-        id: 1,
-        desc: 'Build cutting-edge Al agents, pushing theboundaries of autonomous systems andadvanced machine learning',
-        icon: data4Icon1,
-    },
-    {
-        id: 2,
-        desc: 'Contribute to one of the fastest growing open-source projects of all time. Gain visibility in theAl community and shape industry standards',
-        icon: data4Icon2,
-    },
-    {
-        id: 3,
-        desc: 'Get hands-on experience in developing stateof-the-art Al technologies and agent architectures',
-        icon: data4Icon3,
-    },
+  {
+    id: 1,
+    desc: 'Build cutting-edge Al agents, pushing theboundaries of autonomous systems andadvanced machine learning',
+    icon: data4Icon1,
+  },
+  {
+    id: 2,
+    desc: 'Contribute to one of the fastest growing open-source projects of all time. Gain visibility in theAl community and shape industry standards',
+    icon: data4Icon2,
+  },
+  {
+    id: 3,
+    desc: 'Get hands-on experience in developing stateof-the-art Al technologies and agent architectures',
+    icon: data4Icon3,
+  },
 
 ]
 
@@ -289,68 +289,68 @@ const ItemCard = styled.div`
 `
 
 const Hero = () => {
-    const { setShowSubMenu } = useDialogContext()
-    return (
-        <Wrapper onClick={() => setShowSubMenu(false)}>
-            <img className='bg-img' src={bgHero1} alt="" />
-            <ContentBox>
-                <h1>Move AI Engine layer Coming Soon</h1>
-                <h6>Unlock the Future of AI-Driven Decentralized Agent Network on Movement
-                </h6>
-                <div className='data-box' style={{ marginTop: '4rem' }}>
-                    {
-                        data1.map((item) => (
-                            <Data1Box id={item.id} key={item.id}>
-                                <img src={item.icon} alt="" />
-                                <div className='right-box'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </Data1Box>
-                        ))
-                    }
+  const { setShowSubMenu } = useDialogContext()
+  return (
+    <Wrapper onClick={() => setShowSubMenu(false)}>
+      <img className='bg-img' src={bgHero1} alt="" />
+      <ContentBox>
+        <h1>Move AI Engine layer Coming Soon</h1>
+        <h6>Unlock the Future of AI-Driven Decentralized Agent Network on Movement
+        </h6>
+        <div className='data-box' style={{ marginTop: '4rem' }}>
+          {
+            data1.map((item) => (
+              <Data1Box id={item.id} key={item.id}>
+                <img src={item.icon} alt="" />
+                <div className='right-box'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='data-box' style={{ marginTop: '1.4rem' }}>
-                    {
-                        data2.map((item) => (
-                            <Data2Box id={item.id} key={item.id}>
-                                <img src={item.icon} alt="" />
-                                <div className='right-box'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </Data2Box>
-                        ))
-                    }
+              </Data1Box>
+            ))
+          }
+        </div>
+        <div className='data-box' style={{ marginTop: '1.4rem' }}>
+          {
+            data2.map((item) => (
+              <Data2Box id={item.id} key={item.id}>
+                <img src={item.icon} alt="" />
+                <div className='right-box'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
+              </Data2Box>
+            ))
+          }
+        </div>
 
-                <div className='data3-box' style={{ marginTop: '1.4rem' }}>
-                    <div className='left-box'>
-                        {
-                            data3.map((item) => (
-                                <ItemCard>
-                                    <img src={item.icon} alt="" />
-                                    <p>{item.desc}</p>
-                                </ItemCard>
-                            ))
-                        }
-                    </div>
+        <div className='data3-box' style={{ marginTop: '1.4rem' }}>
+          <div className='left-box'>
+            {
+              data3.map((item) => (
+                <ItemCard>
+                  <img src={item.icon} alt="" />
+                  <p>{item.desc}</p>
+                </ItemCard>
+              ))
+            }
+          </div>
 
-                    <div className='right-box'>
-                        {
-                            data4.map((item) => (
-                                <ItemCard>
-                                    <img src={item.icon} alt="" />
-                                    <p>{item.desc}</p>
-                                </ItemCard>
-                            ))
-                        }
-                    </div>
-                </div>
+          <div className='right-box'>
+            {
+              data4.map((item) => (
+                <ItemCard>
+                  <img src={item.icon} alt="" />
+                  <p>{item.desc}</p>
+                </ItemCard>
+              ))
+            }
+          </div>
+        </div>
 
-            </ContentBox>
-        </Wrapper>
-    )
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default Hero

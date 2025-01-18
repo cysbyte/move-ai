@@ -126,46 +126,46 @@ const Title = styled.h5<{id: number}>`
 `
 
 const data = [
-    {
-        id: 1,
-        title: 'AI Agent Engine Layer',
-        desc: 'Simplify the creation and deployment of autonomous AI agents.',
-        icon: icon1,
-    },
-    {
-        id: 2,
-        title: 'Custom AI Solutions',
-        desc: 'From smart contracts to data intelligence, MoveAI provides a suite of tools for Web3 development.',
-        icon: icon2,
-    },
-    {
-        id: 3,
-        title: 'Seamless Blockchain Integration',
-        desc: 'Build scalable and secure AI solutions that connect across multiple chains.',
-        icon: icon3,
-    },
+  {
+    id: 1,
+    title: 'AI Agent Engine Layer',
+    desc: 'Simplify the creation and deployment of autonomous AI agents.',
+    icon: icon1,
+  },
+  {
+    id: 2,
+    title: 'Custom AI Solutions',
+    desc: 'From smart contracts to data intelligence, MoveAI provides a suite of tools for Web3 development.',
+    icon: icon2,
+  },
+  {
+    id: 3,
+    title: 'Seamless Blockchain Integration',
+    desc: 'Build scalable and secure AI solutions that connect across multiple chains.',
+    icon: icon3,
+  },
 ]
 
 const Building = () => {
   return (
     <Wrapper>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <p className='desc'>A Purpose-Built Modular Design for Decentralized AI</p>
-            <h2>Building the Future of AI on Movement</h2>
-            <Link to={''} className='explore-button'>Explore AI Solutions</Link>
-            <FeaturesBox>
-                {
-                    data.map((item)=>(
-                        <div key={item.id} className='item-card'>
-                            <img src={item.icon} alt="" />
-                            <Title id={item.id}>{item.title}</Title>
-                            <p>{item.desc}</p>
-                        </div>
-                    ))
-                }
-            </FeaturesBox>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <p className='desc'>A Purpose-Built Modular Design for Decentralized AI</p>
+        <h2>Building the Future of AI on Movement</h2>
+        <Link to={''} className='explore-button'>Explore AI Solutions</Link>
+        <FeaturesBox>
+          {
+            data.map((item)=>(
+              <div key={item.id} className='item-card'>
+                <img src={item.icon} alt="" />
+                <Title id={item.id}>{item.title}</Title>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </FeaturesBox>
+      </ContentBox>
     </Wrapper>
   )
 }

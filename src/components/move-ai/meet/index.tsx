@@ -5,21 +5,21 @@ import bg from '@/assets/move-ai/bg-meet.svg'
 import { Link } from 'react-router-dom'
 
 const data = [
-    {
-        id: 1,
-        title: 'Conversational On-Chain Movement',
-        desc: 'Use natural language. MoveDesk translates your intent into on-chain actions',
-    },
-    {
-        id: 2,
-        title: 'Developer Assistant',
-        desc: 'From coding to deployment, get real-time AI guidance to streamline your Web3 development process',
-    },
-    {
-        id: 3,
-        title: 'Launch Your Own LLM',
-        desc: 'Quickly spin up and tailor your personal AI model—no deep technical expertise required',
-    },
+  {
+    id: 1,
+    title: 'Conversational On-Chain Movement',
+    desc: 'Use natural language. MoveDesk translates your intent into on-chain actions',
+  },
+  {
+    id: 2,
+    title: 'Developer Assistant',
+    desc: 'From coding to deployment, get real-time AI guidance to streamline your Web3 development process',
+  },
+  {
+    id: 3,
+    title: 'Launch Your Own LLM',
+    desc: 'Quickly spin up and tailor your personal AI model—no deep technical expertise required',
+  },
 ]
 
 const Wrapper = styled.section`
@@ -176,37 +176,37 @@ const FeaturesBox = styled.div`
 `
 
 const Meet = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <h5>A Conversational Interface for On-Chain AI</h5>
-                <h2>Meet MoveDesk</h2>
-                <p className='desc'>MoveDesk is your gateway to interacting with MoveAI. Whether you need insights, development assistance, or to launch a custom Large Language Model (LLM)</p>
-                <FeaturesBox>
-                    <img className='plus-svg' src={plus} alt="" />
-                    {
-                        data.map((item) => (
-                            <div className='flex-box' key={item.id}>
-                                <div className='title-box'>
-                                    <span className='dot'></span>
-                                    <span>{item.title}</span>
-                                </div>
-                                <div>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                    <Link to={"https://www.moveai.xyz/movedesk.html"}
-                          onClick={(e) => {e.preventDefault();window.open("https://www.moveai.xyz/movedesk.html", "_blank");}}
-                          className='try-button'>
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h5>A Conversational Interface for On-Chain AI</h5>
+        <h2>Meet MoveDesk</h2>
+        <p className='desc'>MoveDesk is your gateway to interacting with MoveAI. Whether you need insights, development assistance, or to launch a custom Large Language Model (LLM)</p>
+        <FeaturesBox>
+          <img className='plus-svg' src={plus} alt="" />
+          {
+            data.map((item) => (
+              <div className='flex-box' key={item.id}>
+                <div className='title-box'>
+                  <span className='dot'></span>
+                  <span>{item.title}</span>
+                </div>
+                <div>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+          <Link to={"https://www.moveai.xyz/movedesk.html"}
+            onClick={(e) => {e.preventDefault();window.open("https://www.moveai.xyz/movedesk.html", "_blank");}}
+            className='try-button'>
                         Try MoveDesk
-                    </Link>
-                </FeaturesBox>
-            </ContentBox>
-        </Wrapper>
-    )
+          </Link>
+        </FeaturesBox>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Meet)

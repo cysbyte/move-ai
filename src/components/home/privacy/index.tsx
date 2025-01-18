@@ -79,18 +79,18 @@ const Wrapper = styled.section`
     }
 `
 const Privacy = () => {
-    return (
-        <Wrapper>
-            <div className='container'>
-                <div className='left-box'>
-                    <h2>Privacy-Preserving AI Leveraging Zero-Knowledge Proofs for Secure AI</h2>
-                    <p className='desc'>Neural Network integrates Zero-Knowledge Proofs and Federated Learning, allowing privacy-focused AI training for sensitive sectors like healthcare.</p>
-                    <p className='cta'>CTA: Start building on the Neural Network</p>
-                </div>
-                <img src={privacy} alt="" />
-            </div>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <div className='container'>
+        <div className='left-box'>
+          <h2>Privacy-Preserving AI Leveraging Zero-Knowledge Proofs for Secure AI</h2>
+          <p className='desc'>Neural Network integrates Zero-Knowledge Proofs and Federated Learning, allowing privacy-focused AI training for sensitive sectors like healthcare.</p>
+          <p className='cta'>CTA: Start building on the Neural Network</p>
+        </div>
+        <img src={privacy} alt="" />
+      </div>
+    </Wrapper>
+  )
 }
 
 export default Privacy

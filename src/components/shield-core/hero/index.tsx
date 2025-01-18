@@ -64,14 +64,14 @@ const ContentBox = styled.div`
 
 
 const Hero = () => {
-    const { setShowSubMenu } = useDialogContext()
+  const { setShowSubMenu } = useDialogContext()
   return (
     <Wrapper onClick={()=>setShowSubMenu(false)}>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <h1>Protect your wallet and interactions from Web3 vulnerabilities</h1>
-            <p className='desc'>Say goodbye to risky interactions with GameFi and DeFi projects. ShieldCore Suite detects threats, provides real-time guidance, and ensures your Web3 experience is secure.</p>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h1>Protect your wallet and interactions from Web3 vulnerabilities</h1>
+        <p className='desc'>Say goodbye to risky interactions with GameFi and DeFi projects. ShieldCore Suite detects threats, provides real-time guidance, and ensures your Web3 experience is secure.</p>
+      </ContentBox>
     </Wrapper>
   )
 }

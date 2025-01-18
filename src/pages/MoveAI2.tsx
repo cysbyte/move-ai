@@ -1,6 +1,6 @@
 import Ecosystem from '@/components/move-ai2/ecosystem'
 import Footer from '@/components/move-ai2/footer'
-import Header, { menu } from '@/components/move-ai2/header'
+import Header from '@/components/move-ai2/header'
 import Hero from '@/components/move-ai2/hero'
 import Meet from '@/components/move-ai2/meet'
 import MoblieMenu from '@/components/move-ai2/mobile-menu'
@@ -46,7 +46,7 @@ const HeaderHeroWrapper = styled.div`
 `
 
 const MoveAI2 = () => {
-  const { showMobileMenu, setShowMobileMenu } = useDialogContext()
+  const { showMobileMenu } = useDialogContext()
 
   return (
     <Wrapper>

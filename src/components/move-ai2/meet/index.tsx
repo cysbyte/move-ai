@@ -9,39 +9,39 @@ import twitter from '@/assets/move-ai2/social-links/twitter.svg'
 import telegram from '@/assets/move-ai2/social-links/telegram.svg'
 
 const data = [
-    {
-        id: 1,
-        title: 'Plug-and-Play Framework',
-        desc: 'Rapidly build and customize agents.',
-        icon: icon1,
-    },
-    {
-        id: 2,
-        title: 'Agent Lifecycle Management',
-        desc: 'Tools to train, deploy, and scale agents across Web3.',
-        icon: icon2,
-    },
-    {
-        id: 3,
-        title: 'Cross-Chain Operability',
-        desc: 'Enable agents to function seamlessly on multiple blockchains.',
-        icon: icon3,
-    },
+  {
+    id: 1,
+    title: 'Plug-and-Play Framework',
+    desc: 'Rapidly build and customize agents.',
+    icon: icon1,
+  },
+  {
+    id: 2,
+    title: 'Agent Lifecycle Management',
+    desc: 'Tools to train, deploy, and scale agents across Web3.',
+    icon: icon2,
+  },
+  {
+    id: 3,
+    title: 'Cross-Chain Operability',
+    desc: 'Enable agents to function seamlessly on multiple blockchains.',
+    icon: icon3,
+  },
 ]
 
 const socialLinks = [
-    {
-        id: 1,
-        name: 'twitter',
-        link: 'https://x.com/move__ai',
-        icon: twitter,
-    },
-    {
-        id: 1,
-        name: 'telegram',
-        link: 'https://t.me/moveaiofficial',
-        icon: telegram,
-    },
+  {
+    id: 1,
+    name: 'twitter',
+    link: 'https://x.com/move__ai',
+    icon: twitter,
+  },
+  {
+    id: 1,
+    name: 'telegram',
+    link: 'https://t.me/moveaiofficial',
+    icon: telegram,
+  },
 ]
 
 
@@ -209,40 +209,40 @@ const SocialLinkButtons = styled.div`
 `
 
 const Meet = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <h5>A Conversational Interface for On-Chain AI</h5>
-                <h2>AI Agent Layer</h2>
-                <p className='desc'>Power the creation of intelligent AI agents optimized for decentralized ecosystems.</p>
-                <img className='plus-svg' src={plus} alt="" />
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='flex-box' key={item.id}>
-                                <img src={item.icon} alt="" />
-                                <div className='text-box'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                    {/* <a href='#/move-desk' className='try-button'>Launch move desk</a> */}
-                </FeaturesBox>
-            </ContentBox>
-            <SocialLinkButtons>
-                {
-                    socialLinks.map((item)=>(
-                        <a href={item.link} target='_blank' key={item.id}>
-                        <img className='link'  src={item.icon} alt="" />
-                        </a>
-                    ))
-                }
-            </SocialLinkButtons>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h5>A Conversational Interface for On-Chain AI</h5>
+        <h2>AI Agent Layer</h2>
+        <p className='desc'>Power the creation of intelligent AI agents optimized for decentralized ecosystems.</p>
+        <img className='plus-svg' src={plus} alt="" />
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='flex-box' key={item.id}>
+                <img src={item.icon} alt="" />
+                <div className='text-box'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+          {/* <a href='#/move-desk' className='try-button'>Launch move desk</a> */}
+        </FeaturesBox>
+      </ContentBox>
+      <SocialLinkButtons>
+        {
+          socialLinks.map((item)=>(
+            <a href={item.link} target='_blank' key={item.id}>
+              <img className='link'  src={item.icon} alt="" />
+            </a>
+          ))
+        }
+      </SocialLinkButtons>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Meet)

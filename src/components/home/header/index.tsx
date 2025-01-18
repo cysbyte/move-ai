@@ -100,7 +100,7 @@ const Header = () => {
   const [showDisconnect, setShowDisconnect] = useState(false)
 
   const handleClick = () => {
-      setShowDisconnect(prev => !prev)
+    setShowDisconnect(prev => !prev)
 
   }
 

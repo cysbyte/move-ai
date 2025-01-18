@@ -4,36 +4,36 @@ import styled from 'styled-components'
 import bg from '@/assets/move-ai/bg-core-feature.svg'
 
 const data = [
-    {
-        id: 1,
-        title: 'Decentralized AI Applications',
-        desc: 'Launch intelligent dApps with low transaction costs and Ethereum-grade security',
-    },
-    {
-        id: 2,
-        title: 'Autonomous AI Agents',
-        desc: 'Enable complex, multi-agent interactions that leverage AI Agent Sequencer & OptiChain for seamless cooperation',
-    },
-    {
-        id: 3,
-        title: 'Real-Time Inference & Analytics',
-        desc: 'Enjoy low-latency insights for dynamic sectors like finance, healthcare, and more',
-    },
-    {
-        id: 4,
-        title: 'Privacy-First Data Handling',
-        desc: 'Federated Learning and Zero-Knowledge Proofs safeguard sensitive data',
-    },
-    {
-        id: 5,
-        title: 'Interoperable AI Marketplace',
-        desc: 'Share, license, and monetize AI models, datasets, and tools in a decentralized environment',
-    },
-    {
-        id: 6,
-        title: 'Incentive-Driven Collaboration',
-        desc: 'IEarn rewards for training, data contributions, and model optimization to fuel ongoing ecosystem growth',
-    },
+  {
+    id: 1,
+    title: 'Decentralized AI Applications',
+    desc: 'Launch intelligent dApps with low transaction costs and Ethereum-grade security',
+  },
+  {
+    id: 2,
+    title: 'Autonomous AI Agents',
+    desc: 'Enable complex, multi-agent interactions that leverage AI Agent Sequencer & OptiChain for seamless cooperation',
+  },
+  {
+    id: 3,
+    title: 'Real-Time Inference & Analytics',
+    desc: 'Enjoy low-latency insights for dynamic sectors like finance, healthcare, and more',
+  },
+  {
+    id: 4,
+    title: 'Privacy-First Data Handling',
+    desc: 'Federated Learning and Zero-Knowledge Proofs safeguard sensitive data',
+  },
+  {
+    id: 5,
+    title: 'Interoperable AI Marketplace',
+    desc: 'Share, license, and monetize AI models, datasets, and tools in a decentralized environment',
+  },
+  {
+    id: 6,
+    title: 'Incentive-Driven Collaboration',
+    desc: 'IEarn rewards for training, data contributions, and model optimization to fuel ongoing ecosystem growth',
+  },
 ]
 
 const Wrapper = styled.section`
@@ -149,26 +149,26 @@ const FeaturesBox = styled.div`
 `
 
 const CoreFeatures = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <p>Build, Train, and Deploy AI at Scale</p>
-                <h2>MoveAI Core Capabilities & Features</h2>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <h6>{item.title}</h6>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))
-                    }
-                </FeaturesBox>
-                <Link to={''} className='explore-button'>Explore Use Cases</Link>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <p>Build, Train, and Deploy AI at Scale</p>
+        <h2>MoveAI Core Capabilities & Features</h2>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <h6>{item.title}</h6>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </FeaturesBox>
+        <Link to={''} className='explore-button'>Explore Use Cases</Link>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(CoreFeatures)

@@ -114,52 +114,52 @@ const ContentBox = styled.div`
 `
 
 const Simulate = () => {
-    const data = [
-        {
-            id: 1,
-            title: 'High Risk',
-            desc: 'A contract flagged for phishing attempts or wallet drainers',
-            icon: icon1,
-        },
-        {
-            id: 2,
-            title: 'Medium Risk',
-            desc: 'Transactions with unusual patterns or unverified contracts',
-            icon: icon2,
-        },
-        {
-            id: 3,
-            title: 'Low Risk',
-            desc: 'Verified contracts with minimal vulnerabilities',
-            icon: icon3,
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'High Risk',
+      desc: 'A contract flagged for phishing attempts or wallet drainers',
+      icon: icon1,
+    },
+    {
+      id: 2,
+      title: 'Medium Risk',
+      desc: 'Transactions with unusual patterns or unverified contracts',
+      icon: icon2,
+    },
+    {
+      id: 3,
+      title: 'Low Risk',
+      desc: 'Verified contracts with minimal vulnerabilities',
+      icon: icon3,
+    },
+  ]
 
-    return (
-        <Wrapper>
-            <ContentBox>
-                <img className='border' src={border} alt="" />
-                <div className='left-box'>
-                    <h1>Simulate Interactions for Safer Web3 Transactions</h1>
-                    <p>
+  return (
+    <Wrapper>
+      <ContentBox>
+        <img className='border' src={border} alt="" />
+        <div className='left-box'>
+          <h1>Simulate Interactions for Safer Web3 Transactions</h1>
+          <p>
                         ShieldCore allows you to simulate actions like token approvals and interactions with DeFi protocols. See risks and potential outcomes before committing to a transaction
-                    </p>
+          </p>
+        </div>
+        <div className='right-box'>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <div className='item-card-right'>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
                 </div>
-                <div className='right-box'>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <div className='item-card-right'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>))
-                    }
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+              </div>))
+          }
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Simulate)

@@ -26,7 +26,7 @@ const Wrapper = styled.main`
 `
 
 const FusionX = () => {
-  const { showMobileMenu, setShowMobileMenu } = useDialogContext()
+  const { showMobileMenu } = useDialogContext()
   return (
     <Wrapper>
       {showMobileMenu && <MoblieMenu />

@@ -10,42 +10,42 @@ import icon5 from '@/assets/about/core-icon5.svg'
 import icon6 from '@/assets/about/core-icon6.svg'
 
 const data = [
-    {
-        id: 1,
-        title: 'Decentralized AI Applications',
-        desc: 'Launch intelligent dApps with low transaction costs and Ethereum-grade security',
-        icon: icon1,
-    },
-    {
-        id: 2,
-        title: 'Autonomous AI Agents',
-        desc: 'MoveAI executes your commands flawlessly through natural communication',
-        icon: icon2,
-    },
-    {
-        id: 3,
-        title: 'Real-Time Inference & Analytics',
-        desc: 'Enjoy low-latency insights for dynamic sectors like finance, healthcare, and more',
-        icon: icon3,
-    },
-    {
-        id: 4,
-        title: 'Privacy-First Data Handling',
-        desc: 'Federated Learning and Zero-Knowledge Proofs safeguard sensitive data',
-        icon: icon4,
-    },
-    {
-        id: 5,
-        title: 'Interoperable AI Marketplace',
-        desc: 'Share, license, and monetize AI models, datasets, and tools in a decentralized environment',
-        icon: icon5,
-    },
-    {
-        id: 6,
-        title: 'Incentive-Driven Collaboration',
-        desc: 'Earn rewards for training, data contributions, and model optimization to fuel ongoing ecosystem growth',
-        icon: icon6,
-    },
+  {
+    id: 1,
+    title: 'Decentralized AI Applications',
+    desc: 'Launch intelligent dApps with low transaction costs and Ethereum-grade security',
+    icon: icon1,
+  },
+  {
+    id: 2,
+    title: 'Autonomous AI Agents',
+    desc: 'MoveAI executes your commands flawlessly through natural communication',
+    icon: icon2,
+  },
+  {
+    id: 3,
+    title: 'Real-Time Inference & Analytics',
+    desc: 'Enjoy low-latency insights for dynamic sectors like finance, healthcare, and more',
+    icon: icon3,
+  },
+  {
+    id: 4,
+    title: 'Privacy-First Data Handling',
+    desc: 'Federated Learning and Zero-Knowledge Proofs safeguard sensitive data',
+    icon: icon4,
+  },
+  {
+    id: 5,
+    title: 'Interoperable AI Marketplace',
+    desc: 'Share, license, and monetize AI models, datasets, and tools in a decentralized environment',
+    icon: icon5,
+  },
+  {
+    id: 6,
+    title: 'Incentive-Driven Collaboration',
+    desc: 'Earn rewards for training, data contributions, and model optimization to fuel ongoing ecosystem growth',
+    icon: icon6,
+  },
 ]
 
 const Wrapper = styled.section`
@@ -167,29 +167,29 @@ const FeaturesBox = styled.div`
 `
 
 const CoreFeatures = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <p>Build, Train, and Deploy AI at Scale</p>
-                <h2>MoveAI Core Capabilities & Features</h2>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <img src={item.icon} alt="" />
-                                <div>
-                                <h6>{item.title}</h6>
-                                <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </FeaturesBox>
-                <Link to={''} className='explore-button'>Explore Use Cases</Link>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <p>Build, Train, and Deploy AI at Scale</p>
+        <h2>MoveAI Core Capabilities & Features</h2>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <img src={item.icon} alt="" />
+                <div>
+                  <h6>{item.title}</h6>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
+        </FeaturesBox>
+        <Link to={''} className='explore-button'>Explore Use Cases</Link>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(CoreFeatures)

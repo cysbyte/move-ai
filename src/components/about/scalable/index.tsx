@@ -1,38 +1,36 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import plus from '@/assets/move-ai/scalable-plus.svg'
 import icon1 from '@/assets/about/scalable-icon1.svg'
 import icon2 from '@/assets/about/scalable-icon2.svg'
 import icon3 from '@/assets/about/scalable-icon3.svg'
 import icon4 from '@/assets/about/scalable-icon4.svg'
 import { useDialogContext } from '@/providers/DialogProvider'
+import React from 'react'
+import styled from 'styled-components'
 
 const data = [
-    {
-        id: 1,
-        title: 'Conversational On-chain Movement',
-        desc: 'MoveAI executes your commands flawlessly through natural communication',
-        icon: icon1,
-    },
-    {
-        id: 2,
-        title: 'Modular Architecture',
-        desc: 'Execution, consensus, and data availability layers are separated for optimal performance',
-        icon: icon2,
-    },
-    {
-        id: 3,
-        title: 'AI Agent Sequencer & L3 OptiChain',
-        desc: 'Autonomous agents collaborate seamlessly, coordinating complex tasks without manual intervention',
-        icon: icon3,
-    },
-    {
-        id: 4,
-        title: 'Cognitively Decentralized Mechanism (CogDec)',
-        desc: 'Contributions are validated by utility, fostering a globally distributed, high-quality AI ecosystem',
-        icon: icon4,
-    },
+  {
+    id: 1,
+    title: 'Conversational On-chain Movement',
+    desc: 'MoveAI executes your commands flawlessly through natural communication',
+    icon: icon1,
+  },
+  {
+    id: 2,
+    title: 'Modular Architecture',
+    desc: 'Execution, consensus, and data availability layers are separated for optimal performance',
+    icon: icon2,
+  },
+  {
+    id: 3,
+    title: 'AI Agent Sequencer & L3 OptiChain',
+    desc: 'Autonomous agents collaborate seamlessly, coordinating complex tasks without manual intervention',
+    icon: icon3,
+  },
+  {
+    id: 4,
+    title: 'Cognitively Decentralized Mechanism (CogDec)',
+    desc: 'Contributions are validated by utility, fostering a globally distributed, high-quality AI ecosystem',
+    icon: icon4,
+  },
 ]
 
 const Wrapper = styled.section`
@@ -161,31 +159,31 @@ const FeaturesBox = styled.div`
 `
 
 const Scalable = () => {
-    const {setShowSubMenu} = useDialogContext()
-    return (
-        <Wrapper onClick={()=>setShowSubMenu(false)}>
-            <ContentBox>
-                <h2>The Scalable AI Infrastructure on Movement</h2>
-                <p className='desc'>MoveAi is a Layer 2 AI infrastructure that merges the modular Ethereum-centric approach with AI-driven execution and decentralized collaboration</p>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='flex-box' key={item.id}>
-                                <div className='title-box'>
-                                    <img src={item.icon} alt="" />
-                                    <h5>{item.title}</h5>
-                                </div>
-                                <div>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
+  const {setShowSubMenu} = useDialogContext()
+  return (
+    <Wrapper onClick={()=>setShowSubMenu(false)}>
+      <ContentBox>
+        <h2>The Scalable AI Infrastructure on Movement</h2>
+        <p className='desc'>MoveAi is a Layer 2 AI infrastructure that merges the modular Ethereum-centric approach with AI-driven execution and decentralized collaboration</p>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='flex-box' key={item.id}>
+                <div className='title-box'>
+                  <img src={item.icon} alt="" />
+                  <h5>{item.title}</h5>
+                </div>
+                <div>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
 
-                </FeaturesBox>
-            </ContentBox>
-        </Wrapper>
-    )
+        </FeaturesBox>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Scalable)

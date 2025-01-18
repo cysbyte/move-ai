@@ -7,24 +7,24 @@ import styled from 'styled-components'
 import bg from '@/assets/move-ai2/bg-move-desk.svg'
 
 const data = [
-    {
-        id: 1,
-        title: 'Real-Time Support:',
-        desc: 'Instant assistance for all your queries and challenges.',
-        icon: icon1,
-    },
-    {
-        id: 2,
-        title: 'Insightful Analytics:',
-        desc: 'Gain actionable insights to optimize your projects.',
-        icon: icon2,
-    },
-    {
-        id: 3,
-        title: 'Seamless Integration:',
-        desc: 'Effortlessly connects with various Movement blockchain applications.',
-        icon: icon3,
-    },
+  {
+    id: 1,
+    title: 'Real-Time Support:',
+    desc: 'Instant assistance for all your queries and challenges.',
+    icon: icon1,
+  },
+  {
+    id: 2,
+    title: 'Insightful Analytics:',
+    desc: 'Gain actionable insights to optimize your projects.',
+    icon: icon2,
+  },
+  {
+    id: 3,
+    title: 'Seamless Integration:',
+    desc: 'Effortlessly connects with various Movement blockchain applications.',
+    icon: icon3,
+  },
 ]
 
 const Wrapper = styled.section`
@@ -155,30 +155,30 @@ const FeaturesBox = styled.div`
 `
 
 const MoveDesk = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <h2>Move Desk</h2>
-                <p className='desc'>Al-Powered Gateway to the Movement Ecosystem</p>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='flex-box' key={item.id}>
-                                <img src={item.icon} alt="" />
-                                <div>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h2>Move Desk</h2>
+        <p className='desc'>Al-Powered Gateway to the Movement Ecosystem</p>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='flex-box' key={item.id}>
+                <img src={item.icon} alt="" />
+                <div>
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
+                </div>
+              </div>
+            ))
+          }
 
-                <Link target='_blank' to={'https://www.moveai.xyz/movedesk.html'} className='learn-button'>Try MoveDesk</Link>
-                </FeaturesBox>
-            </ContentBox>
-        </Wrapper>
-    )
+          <Link target='_blank' to={'https://www.moveai.xyz/movedesk.html'} className='learn-button'>Try MoveDesk</Link>
+        </FeaturesBox>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(MoveDesk)

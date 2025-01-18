@@ -64,11 +64,11 @@ const ContentBox = styled.div`
 const Innovate = () => {
   return (
     <Wrapper>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <h2>Let’s Innovate Together</h2>
-            <p>Partner with MoveAI and be at the forefront of the decentralized AI revolution. We can't wait to see what we'll create together!</p>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h2>Let’s Innovate Together</h2>
+        <p>Partner with MoveAI and be at the forefront of the decentralized AI revolution. We can't wait to see what we'll create together!</p>
+      </ContentBox>
     </Wrapper>
   )
 }

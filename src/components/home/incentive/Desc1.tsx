@@ -27,7 +27,7 @@ const Wrapper = styled.p`
 const Desc1 = () => {
   return (
     <Wrapper>
-        <span>8.8</span><span> billion tokens</span>
+      <span>8.8</span><span> billion tokens</span>
     </Wrapper>
   )
 }

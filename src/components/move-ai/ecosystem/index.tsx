@@ -160,78 +160,78 @@ const FeaturesBox = styled.div`
 
 const Ecosystem = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'Developers',
-            desc: 'Build decentralized AI applications and integrations',
-        },
-        {
-            id: 2,
-            title: 'Data Consumers',
-            desc: 'Access scalable AI insights and real-time data',
-        },
-        {
-            id: 3,
-            title: 'Data Providers',
-            desc: 'Offer datasets for model training and earn rewards',
-        },
-        {
-            id: 4,
-            title: 'AI Trainers',
-            desc: 'Refine and validate models collaboratively',
-        },
-        {
-            id: 5,
-            title: 'Node Operators',
-            desc: 'Support network security, scalability, and uptime',
-        },
-        {
-            id: 6,
-            title: 'Governance Members',
-            desc: 'Shape the network’s future through decentralized decision-making',
-        },
-        {
-            id: 7,
-            title: 'Community Advocates',
-            desc: 'Spread the word, educate, and grow the MoveAI user base',
-        },
-        {
-            id: 8,
-            title: 'Security Contributors',
-            desc: 'Enhance ecosystem safety with audits and cryptographic innovations',
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'Developers',
+      desc: 'Build decentralized AI applications and integrations',
+    },
+    {
+      id: 2,
+      title: 'Data Consumers',
+      desc: 'Access scalable AI insights and real-time data',
+    },
+    {
+      id: 3,
+      title: 'Data Providers',
+      desc: 'Offer datasets for model training and earn rewards',
+    },
+    {
+      id: 4,
+      title: 'AI Trainers',
+      desc: 'Refine and validate models collaboratively',
+    },
+    {
+      id: 5,
+      title: 'Node Operators',
+      desc: 'Support network security, scalability, and uptime',
+    },
+    {
+      id: 6,
+      title: 'Governance Members',
+      desc: 'Shape the network’s future through decentralized decision-making',
+    },
+    {
+      id: 7,
+      title: 'Community Advocates',
+      desc: 'Spread the word, educate, and grow the MoveAI user base',
+    },
+    {
+      id: 8,
+      title: 'Security Contributors',
+      desc: 'Enhance ecosystem safety with audits and cryptographic innovations',
+    },
+  ]
 
-    return (
-        <Wrapper>
-            <img className='line' src={line} alt="" />
-            <ContentBox>
-                <div className='top-box'>
-                    <p className='desc'>Join the MoveAI Ecosystem: Build, Innovate, and Collaborate</p>
-                    <h2>Ecosystem & Community</h2>
-                    <h4>Who’s Involved?</h4>
+  return (
+    <Wrapper>
+      <img className='line' src={line} alt="" />
+      <ContentBox>
+        <div className='top-box'>
+          <p className='desc'>Join the MoveAI Ecosystem: Build, Innovate, and Collaborate</p>
+          <h2>Ecosystem & Community</h2>
+          <h4>Who’s Involved?</h4>
 
+        </div>
+        <FeaturesBox>
+          {
+            data.map((item) => (
+              <div className='item-card'>
+                <h5>{item.title}</h5>
+                <div className='desc-box'>
+                  <img className='square' src={square} alt="" />
+                  <p className='desc'>{item.desc}</p>
                 </div>
-                <FeaturesBox>
-                    {
-                        data.map((item) => (
-                            <div className='item-card'>
-                                <h5>{item.title}</h5>
-                                <div className='desc-box'>
-                                    <img className='square' src={square} alt="" />
-                                    <p className='desc'>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </FeaturesBox>
-                <div className='button-box'>
-                    <Link to={''} className='get-involved-button'>Get Involved</Link>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+              </div>
+            ))
+          }
+        </FeaturesBox>
+        <div className='button-box'>
+          <Link to={''} className='get-involved-button'>Get Involved</Link>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Ecosystem)

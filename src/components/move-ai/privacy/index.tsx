@@ -104,19 +104,19 @@ const ContentBox = styled.div`
 `
 
 const Privacy = () => {
-    return (
-        <Wrapper>
-            <img className='bg-img' src={bg} alt="" />
-            <ContentBox>
-                <h6>Zero-Knowledge Proofs & Federated Learning for Secure AI</h6>
-                <h2>Privacy-Preserving AI</h2>
-                <p className='desc'>Sensitive industries require trust. MoveAI’s privacy-first approach ensures data security without sacrificing performance, enabling sectors like healthcare to adopt decentralized AI confidently</p>
-                <div className='button-box'>
-                    <Link to={''} className='start-button'>Start Building on MoveAI</Link>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <h6>Zero-Knowledge Proofs & Federated Learning for Secure AI</h6>
+        <h2>Privacy-Preserving AI</h2>
+        <p className='desc'>Sensitive industries require trust. MoveAI’s privacy-first approach ensures data security without sacrificing performance, enabling sectors like healthcare to adopt decentralized AI confidently</p>
+        <div className='button-box'>
+          <Link to={''} className='start-button'>Start Building on MoveAI</Link>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Privacy)

@@ -104,21 +104,21 @@ const ContentBox = styled.div`
 `
 const Hero = () => {
 
-    return (
-        <Wrapper>
-            <ContentBox>
-                <div className='line'></div>
-                <h1>MOVEAI</h1>
-                <h3>Your Intent-Centric, Scalable Layer 2 Platform for Decentralized AI</h3>
-                <p>Empowering developers and communities with a trustless, EVM-secured, modular infrastructure to build, deploy, and scale AI-driven applications and autonomous agents.
-                </p>
-                <div className='bottom-box'>
-                    <button>Get early access</button>
-                    <p>Graphic Visualisation of Ai Network</p>
-                </div>
-            </ContentBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <ContentBox>
+        <div className='line'></div>
+        <h1>MOVEAI</h1>
+        <h3>Your Intent-Centric, Scalable Layer 2 Platform for Decentralized AI</h3>
+        <p>Empowering developers and communities with a trustless, EVM-secured, modular infrastructure to build, deploy, and scale AI-driven applications and autonomous agents.
+        </p>
+        <div className='bottom-box'>
+          <button>Get early access</button>
+          <p>Graphic Visualisation of Ai Network</p>
+        </div>
+      </ContentBox>
+    </Wrapper>
+  )
 }
 
 export default React.memo(Hero)

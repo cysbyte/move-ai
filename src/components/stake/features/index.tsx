@@ -47,46 +47,46 @@ const Wrapper = styled.section`
 `
 const Features = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'High Returns',
-            desc: 'The more you stake, the greater your rewards'
-        },
-        {
-            id: 2,
-            title: 'Bonus Reward Program',
-            desc: 'Enjoy extra earnings in addition to the base rate'
-        },
-        {
-            id: 3,
-            title: 'Worry-Free Flexibility',
-            desc: 'No minimum threshold—anyone can participate'
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'High Returns',
+      desc: 'The more you stake, the greater your rewards'
+    },
+    {
+      id: 2,
+      title: 'Bonus Reward Program',
+      desc: 'Enjoy extra earnings in addition to the base rate'
+    },
+    {
+      id: 3,
+      title: 'Worry-Free Flexibility',
+      desc: 'No minimum threshold—anyone can participate'
+    },
+  ]
 
 
-    const GradientBox = styled.div`
+  const GradientBox = styled.div`
         background: linear-gradient(90deg, #011038 0%, #01D3E3 50.5%, #011038 100%);
         padding: 1px 0;
         z-index: 999;
     `
-    return (
-        <Wrapper>
-            <GradientBox>
-                <div className='flex-box'>
-                    {
-                        data.map((item) => (
-                            <div key={item.id} className='feature-card'>
-                                <h5>{item.title}</h5>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-            </GradientBox>
-        </Wrapper>
-    )
+  return (
+    <Wrapper>
+      <GradientBox>
+        <div className='flex-box'>
+          {
+            data.map((item) => (
+              <div key={item.id} className='feature-card'>
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </div>
+      </GradientBox>
+    </Wrapper>
+  )
 }
 
 export default Features

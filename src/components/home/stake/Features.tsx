@@ -45,25 +45,25 @@ const Wrapper = styled.section`
 `
 const Features = () => {
 
-    const data = [
-        {
-            id: 1,
-            title: 'High Returns',
-            desc: 'The more you stake, the greater your rewards'
-        },
-        {
-            id: 2,
-            title: 'Bonus Reward Program',
-            desc: 'Enjoy extra earnings in addition to the base rate'
-        },
-        {
-            id: 3,
-            title: 'Worry-Free Flexibility',
-            desc: 'No minimum threshold—anyone can participate'
-        },
-    ]
+  const data = [
+    {
+      id: 1,
+      title: 'High Returns',
+      desc: 'The more you stake, the greater your rewards'
+    },
+    {
+      id: 2,
+      title: 'Bonus Reward Program',
+      desc: 'Enjoy extra earnings in addition to the base rate'
+    },
+    {
+      id: 3,
+      title: 'Worry-Free Flexibility',
+      desc: 'No minimum threshold—anyone can participate'
+    },
+  ]
 
-    const Container = styled.div`
+  const Container = styled.div`
         width: 100%;
         position: relative;
         .top-border {
@@ -79,25 +79,25 @@ const Features = () => {
             width: 100%;
         }
     `
-    return (
-        <Wrapper>
-                <Container>
-                    <img className='top-border' src={separator} alt="" />
-                    <img className='bottom-border' src={separator} alt="" />
-                    <div className='flex-box'>
-                        {
-                            data.map((item) => (
-                                <div key={item.id} className='feature-card'>
-                                    <h5>{item.title}</h5>
-                                    <p>{item.desc}</p>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </Container>
+  return (
+    <Wrapper>
+      <Container>
+        <img className='top-border' src={separator} alt="" />
+        <img className='bottom-border' src={separator} alt="" />
+        <div className='flex-box'>
+          {
+            data.map((item) => (
+              <div key={item.id} className='feature-card'>
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </div>
+      </Container>
 
-        </Wrapper>
-    )
+    </Wrapper>
+  )
 }
 
 export default Features

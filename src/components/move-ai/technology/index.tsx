@@ -126,42 +126,42 @@ const Title = styled.h5<{id: number}>`
 `
 
 const data = [
-    {
-        id: 1,
-        title: 'AI-Powered Execution Layer',
-        desc: 'Trains, validates, and infers AI models directly on EVM’s',
-    },
-    {
-        id: 2,
-        title: 'Consensus Layer',
-        desc: 'Verifies contributions, ranks quality, and ensures top-tier model performance',
-    },
-    {
-        id: 3,
-        title: 'Transparent Data Availability',
-        desc: 'Accessible, verifiable data builds trust and unlocks decentralized collaboration',
-    },
+  {
+    id: 1,
+    title: 'AI-Powered Execution Layer',
+    desc: 'Trains, validates, and infers AI models directly on EVM’s',
+  },
+  {
+    id: 2,
+    title: 'Consensus Layer',
+    desc: 'Verifies contributions, ranks quality, and ensures top-tier model performance',
+  },
+  {
+    id: 3,
+    title: 'Transparent Data Availability',
+    desc: 'Accessible, verifiable data builds trust and unlocks decentralized collaboration',
+  },
 ]
 
 const Technology = () => {
   return (
     <Wrapper>
-        <img className='bg-img' src={bg} alt="" />
-        <ContentBox>
-            <p className='desc'>A Purpose-Built Modular Design for Decentralized AI</p>
-            <h2>Technology Stack</h2>
-            <Link to={''} className='view-button'>View Technical Docs</Link>
-            <FeaturesBox>
-                {
-                    data.map((item)=>(
-                        <div key={item.id} className='item-card'>
-                            <Title id={item.id}>{item.title}</Title>
-                            <p>{item.desc}</p>
-                        </div>
-                    ))
-                }
-            </FeaturesBox>
-        </ContentBox>
+      <img className='bg-img' src={bg} alt="" />
+      <ContentBox>
+        <p className='desc'>A Purpose-Built Modular Design for Decentralized AI</p>
+        <h2>Technology Stack</h2>
+        <Link to={''} className='view-button'>View Technical Docs</Link>
+        <FeaturesBox>
+          {
+            data.map((item)=>(
+              <div key={item.id} className='item-card'>
+                <Title id={item.id}>{item.title}</Title>
+                <p>{item.desc}</p>
+              </div>
+            ))
+          }
+        </FeaturesBox>
+      </ContentBox>
     </Wrapper>
   )
 }
