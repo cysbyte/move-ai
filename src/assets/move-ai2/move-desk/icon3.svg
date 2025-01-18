@@ -1,0 +1,11 @@
+<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="-6.10352e-05" y="0.5" width="48" height="48" rx="24" fill="#333333"/>
+<path d="M26.2222 18.8044H21.2221C21.2221 19.8933 21.2221 22.1378 21.2221 22.1378H13.9999V14.9155H21.2221V17.1377" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.111 26.5822V22.1378C29.0277 22.1378 26.7777 22.1378 26.7777 22.1378V14.9155H33.9999V22.1378H31.7777" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.7777 29.9155H26.7777V26.5822H33.9999V33.8044H26.7777V31.5822" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.8888 22.1378V26.5823C18.8721 26.5823 21.2221 26.5823 21.2221 26.5823V33.8045H13.9999V26.5823H16.2221" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.6111 19.9156C18.3782 19.9156 19 19.2938 19 18.5267C19 17.7596 18.3782 17.1378 17.6111 17.1378C16.844 17.1378 16.2222 17.7596 16.2222 18.5267C16.2222 19.2938 16.844 19.9156 17.6111 19.9156Z" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.3889 19.9156C31.1559 19.9156 31.7778 19.2938 31.7778 18.5267C31.7778 17.7596 31.1559 17.1378 30.3889 17.1378C29.6218 17.1378 29 17.7596 29 18.5267C29 19.2938 29.6218 19.9156 30.3889 19.9156Z" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.6111 31.5822C18.3782 31.5822 19 30.9604 19 30.1933C19 29.4263 18.3782 28.8044 17.6111 28.8044C16.844 28.8044 16.2222 29.4263 16.2222 30.1933C16.2222 30.9604 16.844 31.5822 17.6111 31.5822Z" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.3889 31.5822C31.1559 31.5822 31.7778 30.9604 31.7778 30.1933C31.7778 29.4263 31.1559 28.8044 30.3889 28.8044C29.6218 28.8044 29 29.4263 29 30.1933C29 30.9604 29.6218 31.5822 30.3889 31.5822Z" stroke="#FFD828" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
